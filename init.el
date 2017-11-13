@@ -13,6 +13,7 @@
 (load "~/.emacs.d/lisp/ivymodes/swiper-init.el")
 (load "~/.emacs.d/lisp/ivymodes/councel-init.el")
 (load "~/.emacs.d/lisp/magit-init.el")
+(load "~/.emacs.d/lisp/mc-init.el")
 
 ;; Load packages that arent configured
 
@@ -23,7 +24,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (magit counsel nyan-mode swiper ivy doom-themes))))
+ '(package-selected-packages
+   (quote
+    (multiple-cursors magit counsel nyan-mode swiper ivy doom-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
