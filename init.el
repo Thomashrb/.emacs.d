@@ -1,5 +1,13 @@
 ;; Load configurations and packages
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (load "~/.emacs.d/lisp/myinit.el")
+(load "~/.emacs.d/lisp/general.el")
 (load "~/.emacs.d/lisp/appearance.el")
 (load "~/.emacs.d/lisp/ivy-init.el")
 (load "~/.emacs.d/lisp/ivymodes/swiper-init.el")
