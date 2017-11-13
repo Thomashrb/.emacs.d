@@ -1,6 +1,6 @@
 ;; magit requres cl-lib but it wont install automaticaly on windows
-;;(use-package cl-lib
-;;  :ensure t)
+(use-package cl-lib
+  :ensure t)
 
 (use-package magit
   :ensure t
