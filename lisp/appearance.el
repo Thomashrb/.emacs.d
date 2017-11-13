@@ -7,6 +7,13 @@
 (scroll-bar-mode -1)
 (set-frame-font "Inconsolata 16" nil t)
 
+;; Statusbar
+(defcustom nyan-animate-nyancat t)
+(use-package nyan-mode
+  :ensure t
+  :config
+  (nyan-mode 1))
+
 ;; Theme
 (require 'doom-themes)
 ;; Global settings (defaults)
