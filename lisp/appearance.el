@@ -8,7 +8,6 @@
 (set-frame-font "Inconsolata 16" nil t)
 
 ;; Statusbar
-(defcustom nyan-animate-nyancat t)
 (use-package nyan-mode
   :ensure t
   :config
