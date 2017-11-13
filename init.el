@@ -18,6 +18,7 @@
 ;; languages
 (load "~/.emacs.d/lisp/languages/scala-init.el")
 (load "~/.emacs.d/lisp/languages/haskell-init.el")
+(load "~/.emacs.d/lisp/languages/markdown-init.el")
 
 
 ;; Junk from emacs
@@ -28,7 +29,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (rainbow-delimiters rainbow-delimiters-mode haskell-mode ensime multiple-cursors magit counsel nyan-mode swiper ivy doom-themes))))
+    (markdown-mode rainbow-delimiters rainbow-delimiters-mode haskell-mode ensime multiple-cursors magit counsel nyan-mode swiper ivy doom-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
