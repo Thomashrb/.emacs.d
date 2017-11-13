@@ -1,7 +1,9 @@
 ;; Ensime - IDE features for scala
 (use-package ensime
   :ensure t
-  :pin melpa)
+  :pin melpa
+  :config
+  (setq ensime-startup-notification nil))
 
 (use-package sbt-mode
   :pin melpa)
