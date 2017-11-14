@@ -6,4 +6,4 @@
 ;; Smart-mode-line
 (use-package smart-mode-line
   :ensure t)
-(smart-mode-line-enable 1)
+(load-theme 'smart-mode-line-dark t)
