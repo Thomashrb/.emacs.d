@@ -1,4 +1,6 @@
-;; Load configurations and packages
+;; =============================================================== ;;
+;;                Load configurations and packages                 ;;
+;; =============================================================== ;;
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -6,6 +8,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;; General emacs configs
 (load "~/.emacs.d/lisp/myinit.el")
 (load "~/.emacs.d/lisp/general.el")
 (load "~/.emacs.d/lisp/appearance.el")
@@ -17,13 +20,14 @@
 (load "~/.emacs.d/lisp/magit-init.el")
 (load "~/.emacs.d/lisp/mc-init.el")
 (load "~/.emacs.d/lisp/rainbow-init.el")
-;; languages
+;; Language support
 (load "~/.emacs.d/lisp/languages/scala-init.el")
 (load "~/.emacs.d/lisp/languages/haskell-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 
 
 ;; Junk from emacs
+;; Do not remove this
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
