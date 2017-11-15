@@ -39,7 +39,7 @@
     ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
  '(package-selected-packages
    (quote
-    (neotree smart-mode-line markdown-mode rainbow-delimiters rainbow-delimiters-mode haskell-mode ensime multiple-cursors magit counsel nyan-mode swiper ivy doom-themes))))
+    (counsel-projectile neotree smart-mode-line markdown-mode rainbow-delimiters rainbow-delimiters-mode haskell-mode ensime multiple-cursors magit counsel nyan-mode swiper ivy doom-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

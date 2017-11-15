@@ -17,3 +17,8 @@
   (global-set-key (kbd "C-x l") 'counsel-locate)
   (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
   (define-key read-expression-map (kbd "C-r") 'counsel-expression-history))
+
+;; Projectile
+(use-package counsel-projectile
+  :ensure t)
+;; Add autoloads here
