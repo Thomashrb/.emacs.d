@@ -23,5 +23,7 @@
   :ensure t)
 
 (use-package counsel-projectile
-  :ensure t)
+  :ensure t
+  :config
+  (global-set-key (kbd "C-c p") 'counsel-projectile))
 ;; Add autoloads here
