@@ -19,6 +19,9 @@
   (define-key read-expression-map (kbd "C-r") 'counsel-expression-history))
 
 ;; Projectile
+(use-package projectile
+  :ensure t)
+
 (use-package counsel-projectile
   :ensure t)
 ;; Add autoloads here
