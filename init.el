@@ -25,3 +25,7 @@
 (load "~/.emacs.d/lisp/languages/scala-init.el")
 (load "~/.emacs.d/lisp/languages/haskell-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
+
+;; No config needed
+(use-package nix-mode
+  :ensure t)
