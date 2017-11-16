@@ -8,6 +8,10 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;; Don't litter my init file
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file 'noerror)
+
 ;; General emacs configs
 (load "~/.emacs.d/lisp/myinit.el")
 (load "~/.emacs.d/lisp/general.el")
