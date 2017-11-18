@@ -3,3 +3,4 @@ elpa/*
 recentf
 .mc-lists.el
 bookmarks
+custom.el
