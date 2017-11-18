@@ -22,7 +22,7 @@
 (load "~/.emacs.d/lisp/ivy-init.el")
 (load "~/.emacs.d/lisp/ivymodes/swiper-init.el")
 (load "~/.emacs.d/lisp/ivymodes/councel-init.el")
-(load "~/.emacs.d/lisp/magit-init.el")
+(load "~/.emacs.d/lisp/git-init.el")
 (load "~/.emacs.d/lisp/mc-init.el")
 (load "~/.emacs.d/lisp/rainbow-init.el")
 ;; Language support
