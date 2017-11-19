@@ -33,3 +33,5 @@
 ;; No config needed
 (use-package nix-mode
   :ensure t)
+(use-package smex
+  :ensure t)
