@@ -31,7 +31,7 @@
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 
 ;; No config needed
-(use-package nix-mode
+(use-package nix-mode ;;
   :ensure t)
-(use-package smex
+(use-package smex     ;; list last ran commands first 
   :ensure t)
