@@ -3,6 +3,7 @@
 (use-package cl-lib
   :ensure t)
 
+;; Git porcelain
 (use-package magit
   :ensure t
   :config
@@ -10,7 +11,7 @@
   (global-set-key (kbd "C-c m s") 'magit-status)
   (global-set-key (kbd "C-c m l") 'magit-log))
 
-;; Gitgutter
+;; Sidebar with gitmarkers
 (use-package git-gutter
   :ensure t)
 (global-git-gutter-mode t)
