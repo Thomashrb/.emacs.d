@@ -3,7 +3,12 @@
   :ensure t)
 (nyan-mode 1)
 
-;; Smart-mode-line
-(use-package smart-mode-line
-  :ensure t)
-(load-theme 'smart-mode-line-dark t)
+;; Spaceline
+(use-package spaceline :ensure t
+  :config
+  (setq-default mode-line-format '("%e" (:eval (spaceline-ml-main)))))
+
+;; Needed for spaceline to work
+(use-package spaceline-config :ensure spaceline
+  :config
+  (spaceline-emacs-theme))
