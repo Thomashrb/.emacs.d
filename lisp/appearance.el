@@ -5,5 +5,5 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-(set-frame-font "Inconsolata 16" nil t)
+(set-frame-font "Inconsolata 13" nil t)
 
