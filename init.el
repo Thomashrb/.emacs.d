@@ -19,6 +19,7 @@
 (load "~/.emacs.d/lisp/theme.el")
 (load "~/.emacs.d/lisp/modeline.el")
 (load "~/.emacs.d/lisp/nav.el")
+(load "~/.emacs.d/lisp/irc.el")
 (load "~/.emacs.d/lisp/ivy-init.el")
 (load "~/.emacs.d/lisp/ivymodes/swiper-init.el")
 (load "~/.emacs.d/lisp/ivymodes/councel-init.el")
