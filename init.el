@@ -27,12 +27,11 @@
 (load "~/.emacs.d/lisp/mc-init.el")
 (load "~/.emacs.d/lisp/rainbow-init.el")
 ;; Language support
+(load "~/.emacs.d/lisp/languages/nix-init.el")
 (load "~/.emacs.d/lisp/languages/scala-init.el")
 (load "~/.emacs.d/lisp/languages/haskell-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 
 ;; No config needed
-(use-package nix-mode ;;
-  :ensure t)
 (use-package smex     ;; list last ran commands first 
   :ensure t)
