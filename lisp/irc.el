@@ -1,4 +1,4 @@
-;;; Sample ERC configuration
+;;; ERC Config - https://www.gnu.org/software/emacs/manual/html_node/erc/Sample-Configuration.html
 ;; Load authentication info from an external source.  Put sensitive
 ;; passwords and the like in here.
 ;; (setq freenode-nickone-pass "mynickservpass1")
@@ -13,8 +13,8 @@
                                  :nick "bbsl")))
 
 ;;; Options
-;; Join the #emacs and #erc channels whenever connecting to Freenode.
-(setq erc-autojoin-channels-alist '(( "#emacs" "#nixos")))
+;; Join channels whenever connecting to Freenode.
+;; (setq erc-autojoin-channels-alist '(("freenode.net" "#emacs" "#nixos")))
 
 ;; Rename server buffers to reflect the current network name instead
 ;; of SERVER:PORT (e.g., "freenode" instead of "irc.freenode.net:6667").
@@ -26,7 +26,6 @@
 (setq erc-interpret-mirc-color t)
 
 ;; The following are commented out by default, but users of other
-;; non-Emacs IRC clients might find them useful.
 ;; Kill buffers for channels after /part
 ;; (setq erc-kill-buffer-on-part t)
 ;; Kill buffers for private queries after quitting the server
