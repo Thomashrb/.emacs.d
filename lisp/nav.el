@@ -1,4 +1,5 @@
 (use-package nav
-  :ensure t)
+  :ensure t
 ;;(nav-disable-overeager-window-splitting)
-(global-set-key (kbd "<f8>") 'nav-toggle)
+  :config
+  (global-set-key (kbd "<f8>") 'nav-toggle))
