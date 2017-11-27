@@ -19,3 +19,6 @@
 (setq use-package-verbose nil)
 (eval-when-compile
   (require 'use-package))
+
+;; enable company golbaly
+(add-hook 'after-init-hook 'global-company-mode)
