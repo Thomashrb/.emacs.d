@@ -15,11 +15,14 @@
   (global-set-key (kbd "C-c j") 'counsel-git-grep)
   (global-set-key (kbd "C-c k") 'counsel-ag)
   (global-set-key (kbd "C-x l") 'counsel-locate)
-  (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
   (define-key read-expression-map (kbd "C-r") 'counsel-expression-history))
 
 ;; Projectile
 (use-package projectile
+  :ensure t)
+
+;; Silver searcher from emacs
+(use-package ag
   :ensure t)
 
 (use-package counsel-projectile

@@ -3,6 +3,6 @@
   :ensure t)
 
 (use-package company-nixos-options
-  :ensure t)
-
-(add-to-list 'company-backends 'company-nixos-options)
+  :ensure t
+  :init
+  (add-to-list 'company-backends 'company-nixos-options))
