@@ -33,5 +33,7 @@
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 
 ;; No config needed
-(use-package smex     ;; list last ran commands first 
+(use-package smex       ;; list last ran commands first 
+  :ensure t)
+(use-package undo-tree  ;; undo tree mode
   :ensure t)
