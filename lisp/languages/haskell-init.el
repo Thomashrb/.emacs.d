@@ -1,6 +1,10 @@
 ;; Haskell mode - IDE like experience for Haskell
 (use-package haskell-mode
-  :ensure t)
+  :ensure t
+  :config
+  (add-to-list 'company-backends 'company-ghc)
+  (custom-set-variables '(company-ghc-show-info t)))
+
 ;; haskell-mode has its own hooks
 (add-hook 'haskell-mode-hook 'haskell-indent-mode)
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
