@@ -18,6 +18,10 @@
   (add-to-list 'company-backends 'company-ghc)
   (custom-set-variables '(company-ghc-show-info t)))
 
+;; to allow haskell-mode to look for ghc in the current sandbox.
+(setq haskell-process-wrapper-function
+        (lambda (args) (apply 'nix-shell-command (nix-current-sandbox) args)))
+
 ;; haskell-mode has its own hooks
 ;;(add-hook 'haskell-mode-hook 'haskell-indent-mode)
 (add-hook 'haskell-mode-hook 'structured-haskell-mode) ;; use this SHM instead
