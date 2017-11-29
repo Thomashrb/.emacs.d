@@ -1,3 +1,5 @@
+;; TODO - can I speed launch up by altering this?
+
 ;; Collection of usefullness when interacting with nix
 (use-package nix-mode ;;
   :ensure t)
