@@ -1,7 +1,7 @@
 ;; Nyan statusbar
-(use-package nyan-mode
-  :ensure t)
-(nyan-mode 1)
+;; (use-package nyan-mode
+;;   :ensure t)
+;; (nyan-mode 1)
 
 ;; Spaceline
 (use-package spaceline :ensure t
