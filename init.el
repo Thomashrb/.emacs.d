@@ -32,6 +32,7 @@
 (load "~/.emacs.d/lisp/languages/haskell-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 (load "~/.emacs.d/lisp/languages/python-init.el")
+(load "~/.emacs.d/lisp/languages/rust-init.el")
 
 ;; No config needed
 (use-package smex       ;; list last ran commands first 
