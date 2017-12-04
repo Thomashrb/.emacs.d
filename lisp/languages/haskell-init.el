@@ -1,13 +1,17 @@
 ;; Haskell mode - IDE like experience for Haskell
 ;; Prerecs for haskell mode setup
 (use-package company-ghc
-  :ensure t)
+  :ensure t
+  :init
+  (custom-set-variables '(company-ghc-show-info t)))
 
 (use-package ghc
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package haskell-mode
-  :ensure t)
+  :ensure t
+  :defer t)
 
 ;; to allow haskell-mode to look for ghc in the current sandbox.
 (setq haskell-process-wrapper-function
@@ -62,7 +66,6 @@
 (autoload 'ghc-debug "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 
-; COMPANY-GHC
-; -----------
+; COMPANY
+; -----
 (add-to-list 'company-backends 'company-ghc)
-(custom-set-variables '(company-ghc-show-info t))

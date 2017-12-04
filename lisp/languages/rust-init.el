@@ -1,2 +1,3 @@
 (use-package rust-mode
-  :ensure t)
+  :ensure t
+  :defer t)
