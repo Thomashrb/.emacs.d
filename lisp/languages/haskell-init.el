@@ -1,14 +1,11 @@
+;; Haskell mode - IDE like experience for Haskell
 ;; Prerecs for haskell mode setup
-(use-package shm
-  :ensure t)
-
 (use-package company-ghc
   :ensure t)
 
 (use-package ghc
   :ensure t)
 
-;; Haskell mode - IDE like experience for Haskell
 (use-package haskell-mode
   :ensure t)
 
@@ -25,21 +22,22 @@
 ;(require 'hi2)
 ;(add-hook 'haskell-mode-hook 'turn-on-hi2)
 ;; Use structured-haskell-mode
-(add-hook 'haskell-mode-hook 'structured-haskell-mode)
+;(add-hook 'haskell-mode-hook 'structured-haskell-mode)
 
 ; Add F12 key combination for going to imports block
-(eval-after-load 'haskell-mode
-  '(define-key haskell-mode-map [f12] 'haskell-navigate-imports))
+;(eval-after-load 'haskell-mode
+;  '(define-key haskell-mode-map [f12] 'haskell-navigate-imports))
 
-(custom-set-variables
+;(custom-set-variables
  ; Set up hasktags (part 2)
- '(haskell-tags-on-save t)
+ ;'(haskell-tags-on-save t)
  ; Set up interactive mode (part 2)
- '(haskell-process-auto-import-loaded-modules t)
- '(haskell-process-log t)
- '(haskell-process-suggest-remove-import-lines t)
+ ;'(haskell-process-auto-import-loaded-modules t)
+ ;'(haskell-process-log t)
+ ;'(haskell-process-suggest-remove-import-lines t)
  ; Set interpreter to be "cabal repl"
- '(haskell-process-type 'cabal-repl))
+ ;'(haskell-process-type 'cabal-repl)
+ ;)
 
 ; Add key combinations for interactive haskell-mode
 (eval-after-load 'haskell-mode '(progn
@@ -57,8 +55,6 @@
 
 (eval-after-load 'haskell-mode
   '(define-key haskell-mode-map (kbd "C-c C-o") 'haskell-compile))
-(eval-after-load 'haskell-cabal
-  '(define-key haskell-cabal-mode-map (kbd "C-c C-o") 'haskell-compile))
   
 ; GHC-MOD
 ; -------
