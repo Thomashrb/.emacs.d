@@ -39,3 +39,7 @@
   :ensure t)
 (use-package undo-tree  ;; undo tree mode
   :ensure t)
+(use-package jump-char
+  :ensure t
+  :config
+  (global-set-key (kbd "C-c f") 'jump-char-forward))
