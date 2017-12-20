@@ -14,7 +14,7 @@
 
 ;; General emacs configs
 (load "~/.emacs.d/lisp/myinit.el")
-(load "~/.emacs.d/lisp/general.el")
+(load "~/.emacs.d/lisp/cleanup.el")
 (load "~/.emacs.d/lisp/appearance.el")
 (load "~/.emacs.d/lisp/theme.el")
 (load "~/.emacs.d/lisp/modeline.el")
@@ -24,7 +24,6 @@
 (load "~/.emacs.d/lisp/ivymodes/swiper-init.el")
 (load "~/.emacs.d/lisp/ivymodes/councel-init.el")
 (load "~/.emacs.d/lisp/git-init.el")
-(load "~/.emacs.d/lisp/mc-init.el")
 (load "~/.emacs.d/lisp/rainbow-init.el")
 ;; Language support
 (load "~/.emacs.d/lisp/languages/nix-init.el")
