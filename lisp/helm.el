@@ -9,13 +9,8 @@
    (global-set-key (kbd "M-x") 'helm-M-x)
    (global-set-key (kbd "C-x b") 'helm-mini)
    (global-set-key (kbd "C-x r b") 'helm-filtered-bookmarks)
-   (global-set-key (kbd "C-x C-f") 'helm-find-files))
-
-;; (use-package helm-smex
-;;   :ensure t
-;;   :config
-;;   (global-set-key [remap execute-extended-command] #'helm-smex)
-;;   (global-set-key (kbd "M-X") #'helm-smex-major-mode-commands))
+   (global-set-key (kbd "C-x C-f") 'helm-find-files)
+   (global-set-key (kbd "M-y") 'helm-show-kill-ring))
 
 (use-package helm-swoop
    :ensure t
