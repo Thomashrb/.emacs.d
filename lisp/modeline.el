@@ -10,3 +10,4 @@
 
 (require 'spaceline-config)
 (spaceline-emacs-theme)
+(spaceline-helm-mode)
