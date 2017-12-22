@@ -2,7 +2,8 @@
 ;; Theme                       ;;
 ;;-----------------------------;;
 
-(use-package solarized-theme
+(use-package spacemacs-theme
+  :defer t
   :ensure t)
 
-(load-theme 'solarized-light t)
+(load-theme 'spacemacs-light t)
