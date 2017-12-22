@@ -1,6 +1,7 @@
 auto-save-list/*
 elpa/*
 url/*
+eshell/*
 recentf
 .mc-lists.el
 bookmarks
