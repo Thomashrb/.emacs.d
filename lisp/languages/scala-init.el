@@ -9,9 +9,9 @@
 (use-package sbt-mode
   :ensure t
   :defer t
-  :pin melpa)
+  :pin melpa-stable)
 
 (use-package scala-mode
   :ensure t
   :defer t
-  :pin melpa)
+  :pin melpa-stable)
