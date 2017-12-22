@@ -17,9 +17,8 @@
   (global-set-key (kbd "C-x l") 'counsel-locate)
   (define-key read-expression-map (kbd "C-r") 'counsel-expression-history))
 
-;; Projectile
-;; (use-package projectile
-;;   :ensure t)
+(use-package smex       ;; list last ran commands first 
+  :ensure t)
 
 (use-package counsel-projectile
   :ensure t
