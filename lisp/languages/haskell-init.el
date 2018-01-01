@@ -19,7 +19,8 @@
   :commands 'dante-mode
   :init
   (add-hook 'haskell-mode-hook 'dante-mode)
-  (add-hook 'haskell-mode-hook 'flycheck-mode))
+  (add-hook 'haskell-mode-hook 'flycheck-mode)
+  (add-to-list 'company-backends 'company-ghc))
 
 (use-package nix-sandbox
   :ensure t)
