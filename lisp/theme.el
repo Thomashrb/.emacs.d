@@ -4,6 +4,6 @@
 
 (use-package spacemacs-theme
   :defer t
-  :ensure t)
-
-(load-theme 'spacemacs-light t)
+  :ensure t
+  :init
+  (load-theme 'spacemacs-light t))
