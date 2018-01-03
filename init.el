@@ -38,6 +38,8 @@
 ;(load "~/.emacs.d/lisp/gmail.el")
 
 ;; No config needed
+(use-package flycheck
+  :ensure t)
 (use-package undo-tree
   :ensure t)
 (use-package jump-char
