@@ -4,8 +4,7 @@
 ;; test that this works by invoking nix-shell with no options      
 ;; ---------------------
 (use-package haskell-mode
-  :defer t
-  :pin melpa-stable)
+  :defer t)
 
 (use-package ghc
   :ensure t)
@@ -13,7 +12,6 @@
 
 (use-package dante
   :defer t
-  :pin melpa-stable
   :after haskell-mode
   :commands 'dante-mode
   :init
