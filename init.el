@@ -38,7 +38,7 @@
 ;(load "~/.emacs.d/lisp/gmail.el")
 
 ;; No config needed
-(use-package undo-tree  ;; undo tree mode
+(use-package undo-tree
   :ensure t)
 (use-package jump-char
   :ensure t
