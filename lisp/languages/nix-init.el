@@ -10,8 +10,7 @@
   :defer t)
 
 (use-package helm-nixos-options
-  :ensure t
-  :defer t)
+  :ensure t)
 
 (use-package company-nixos-options
   :ensure t)
