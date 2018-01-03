@@ -1,9 +1,7 @@
 ;; from: http://julienblanchard.com/2016/fancy-rust-development-with-emacs/
 (use-package rust-mode
-  :ensure t
   :defer t
   :init
-  (add-hook 'flycheck-mode-hook #'flycheck-rust-setup) ;; Flycheck
   (add-hook 'rust-mode-hook 'cargo-minor-mode)
   (add-hook 'rust-mode-hook
 	    (lambda ()
@@ -15,6 +13,9 @@
   )
 
 (use-package cargo
+  :ensure t)
+
+(use-package flycheck-rust
   :ensure t)
 
 ;;TODO set up racer
