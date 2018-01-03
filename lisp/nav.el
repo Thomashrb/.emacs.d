@@ -1,4 +1,4 @@
 (use-package nav
-  :ensure t
+  :defer t
   :config
   (global-set-key (kbd "<f8>") 'nav-toggle))
