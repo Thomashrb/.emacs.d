@@ -3,15 +3,17 @@
   :ensure t
   :defer t
   :init
-  (global-set-key (kbd "C-c C-S-n") 'helm-nixos-options)
-;  (add-to-list 'company-backends 'company-nixos-options)
-  )
+  (global-set-key (kbd "C-c C-S-n") 'helm-nixos-options))
 
 (use-package nixos-options
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package helm-nixos-options
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package company-nixos-options
   :ensure t)
+
+(add-to-list 'company-backends 'company-nixos-options)
