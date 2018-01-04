@@ -14,14 +14,11 @@
   :defer t
   :after haskell-mode
   :commands 'dante-mode
-  :init
+  :config
+  (add-to-list 'company-backends 'company-ghc)
   (add-hook 'haskell-mode-hook 'dante-mode)
   (add-hook 'haskell-mode-hook 'flycheck-mode)
-  (add-to-list 'company-backends 'company-ghc))
-
-;; to use hlint
-(add-hook 'dante-mode-hook
-   '(lambda () (flycheck-add-next-checker 'haskell-dante
-                '(warning . haskell-hlint))))
-
-
+  ;; to use hlint
+  (add-hook 'dante-mode-hook
+	    '(lambda () (flycheck-add-next-checker 'haskell-dante
+						   '(warning . haskell-hlint)))))
