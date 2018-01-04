@@ -43,6 +43,6 @@
 (use-package undo-tree
   :ensure t)
 (use-package jump-char
-  :defer t
+  :ensure t
   :init
   (global-set-key (kbd "C-c f") 'jump-char-forward))
