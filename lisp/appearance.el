@@ -7,4 +7,7 @@
 (scroll-bar-mode -1)
 (set-frame-font "Inconsolata 13" nil t)
 (setq default-frame-alist '((font . "Inconsolata 13"))) ;;; set default font for emacs --daemon / emacsclient
+
+;; Whitespace
 (setq-default show-trailing-whitespace t)
+(add-hook 'before-save-hook 'whitespace-cleanup)
