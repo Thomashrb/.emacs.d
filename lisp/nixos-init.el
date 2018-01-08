@@ -5,9 +5,7 @@
   (add-to-list 'company-backends 'company-nixos-options))
 
 (use-package nixos-options
-  :ensure t
-  :defer t)
+  :ensure t)
 
 (use-package helm-nixos-options
-  :ensure t
-  :defer t)
+  :ensure t)
