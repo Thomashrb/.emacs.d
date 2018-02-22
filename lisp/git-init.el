@@ -5,12 +5,15 @@
 
 ;; Sidebar with gitmarkers
 (use-package git-gutter
+  :ensure t)
+
+(use-package magit-gitflow
   :ensure t
-  :defer t)
+  :config
+  (add-hook 'magit-mode-hook 'turn-on-magit-gitflow))
 
 ;; Git porcelain
 (use-package magit
-  :ensure t
   :defer t
   :init
   (setq magit-auto-revert-mode nil)
