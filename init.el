@@ -26,7 +26,7 @@
 ;(load "~/.emacs.d/lisp/ivymodes/councel-init.el")
 (load "~/.emacs.d/lisp/git-init.el")
 (load "~/.emacs.d/lisp/rainbow-init.el")
-(load "~/.emacs.d/lisp/nixos-init.el") ;; Disable when not on nixos
+;(load "~/.emacs.d/lisp/nixos-init.el") ;; Disable when not on nixos
 ;; Language support
 (load "~/.emacs.d/lisp/languages/nix-init.el")
 (load "~/.emacs.d/lisp/languages/scala-init.el")
@@ -34,6 +34,7 @@
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 (load "~/.emacs.d/lisp/languages/python-init.el")
 (load "~/.emacs.d/lisp/languages/rust-init.el")
+(load "~/.emacs.d/lisp/languages/elm-init.el")
 ;; Social
 (load "~/.emacs.d/lisp/irc.el")
 ;(load "~/.emacs.d/lisp/gmail.el")
