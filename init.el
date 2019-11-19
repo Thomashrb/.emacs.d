@@ -23,9 +23,11 @@
 (load "~/.emacs.d/lisp/dumb-jump.el")
 (load "~/.emacs.d/lisp/git-init.el")
 (load "~/.emacs.d/lisp/rainbow-init.el")
+(load "~/.emacs.d/lisp/mc.el")
 ;(load "~/.emacs.d/lisp/nixos-init.el") ;; Disable when not on nixos
+;(load "~/.emacs.d/lisp/languages/nix-init.el")
 ;; Language support
-(load "~/.emacs.d/lisp/languages/nix-init.el")
+(load "~/.emacs.d/lisp/languages/lsp-init.el")
 (load "~/.emacs.d/lisp/languages/scala-init.el")
 (load "~/.emacs.d/lisp/languages/haskell-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
@@ -38,6 +40,16 @@
 
 ;; No config needed
 (use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+(use-package yasnippet
+  :ensure t
+  :init (yas-global-mode 1))
+(use-package highlight-symbol
+  :ensure t)
+(use-package company
+  :ensure t)
+(use-package restclient
   :ensure t)
 (use-package undo-tree
   :ensure t)

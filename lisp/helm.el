@@ -15,13 +15,16 @@
 (use-package helm-swoop
    :ensure t
    :config
-   (global-set-key (kbd "C-s") 'helm-swoop)
-   (global-set-key (kbd "C-c s") 'helm-multi-swoop-all))
+   (global-set-key (kbd "C-x s") 'helm-swoop)
+   (global-set-key (kbd "C-x S") 'helm-multi-swoop-all))
 
 (use-package helm-projectile
    :ensure t
    :config
-   (global-set-key (kbd "C-c p") 'helm-projectile))
+   (global-set-key (kbd "C-c p") 'helm-projectile)
+   (global-set-key (kbd "C-c P") 'helm-projectile-switch-project)
+   (setq projectile-project-search-path '("~/development/beat" "~/development/beat/delivery" "~/development/rust" "~/development/python" "~/git"))
+   (projectile-discover-projects-in-search-path))
 
 (use-package helm-ag
    :ensure t

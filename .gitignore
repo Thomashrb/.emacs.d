@@ -9,3 +9,6 @@ bookmarks
 custom.el
 smex-items
 tramp
+.cache/
+.lsp-session-v1
+projectile-bookmarks.eld

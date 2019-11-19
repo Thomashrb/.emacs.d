@@ -1,8 +1,3 @@
-;; Magit
-;  Magit requres cl-lib but it wont install automaticaly on windows
-;(use-package cl-lib
-;  :ensure t)
-
 ;; Sidebar with gitmarkers
 (use-package git-gutter
   :ensure t)

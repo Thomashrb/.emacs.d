@@ -18,6 +18,3 @@
 ;; Should be imported from elsewhere
 (use-package flycheck
   :ensure t)
-
-(use-package company
-  :ensure t)
