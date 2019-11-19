@@ -48,7 +48,8 @@
 (use-package highlight-symbol
   :ensure t)
 (use-package company
-  :ensure t)
+  :ensure t
+  :hook (prog-mode . company-mode))
 (use-package restclient
   :ensure t)
 (use-package undo-tree

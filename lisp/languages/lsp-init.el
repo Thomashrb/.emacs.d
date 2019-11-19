@@ -1,4 +1,8 @@
 ;; LSP
+(use-package lsp-mode
+  :ensure t
+  :commands lsp
+  :config (require 'lsp-clients))
 (use-package lsp-ui
   :ensure t
   :commands lsp-ui-mode)
