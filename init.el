@@ -34,11 +34,12 @@
 (load "~/.emacs.d/lisp/languages/python-init.el")
 (load "~/.emacs.d/lisp/languages/rust-init.el")
 (load "~/.emacs.d/lisp/languages/elm-init.el")
+(load "~/.emacs.d/lisp/languages/yaml-init.el")
 ;; Social
 (load "~/.emacs.d/lisp/irc.el")
 ;(load "~/.emacs.d/lisp/gmail.el")
 
-;; No config needed
+;; Little to no config needed
 (use-package flycheck
   :init (global-flycheck-mode))
 (use-package yasnippet
