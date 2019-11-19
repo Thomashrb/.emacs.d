@@ -5,7 +5,6 @@
 
 (use-package doom-themes
   :defer t
-  :ensure t
   :init
   (load-theme 'doom-one t))
 

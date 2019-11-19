@@ -3,18 +3,14 @@
 ;; needs a shell.nix file
 ;; test that this works by invoking nix-shell with no options
 ;; ---------------------
-(use-package haskell-mode
-  :ensure t)
+(use-package haskell-mode)
 
-(use-package ghc
-  :ensure t)
+(use-package ghc)
 ;;----------------------
 
-;(use-package company-ghc
-;  :ensure t)
+;(use-package company-ghc)
 
 (use-package dante
-  :ensure t
   :after haskell-mode
   :commands 'dante-mode
   :config

@@ -1,9 +1,7 @@
 ;; Sidebar with gitmarkers
-(use-package git-gutter
-  :ensure t)
+(use-package git-gutter)
 
 (use-package magit-gitflow
-  :ensure t
   :config
   (add-hook 'magit-mode-hook 'turn-on-magit-gitflow))
 

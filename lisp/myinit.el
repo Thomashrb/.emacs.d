@@ -16,6 +16,9 @@
 (eval-when-compile
   (require 'use-package))
 
+;; set ensure to true always
+(setq use-package-always-ensure t)
+
 ;; enable company golbaly
 (add-hook 'after-init-hook 'global-company-mode)
 

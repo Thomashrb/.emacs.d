@@ -1,5 +1,4 @@
 (use-package helm
-   :ensure t
    :commands helm-mode
    :config
    (helm-mode 1)
@@ -13,13 +12,11 @@
    (global-set-key (kbd "M-y") 'helm-show-kill-ring))
 
 (use-package helm-swoop
-   :ensure t
    :config
    (global-set-key (kbd "C-x s") 'helm-swoop)
    (global-set-key (kbd "C-x S") 'helm-multi-swoop-all))
 
 (use-package helm-projectile
-   :ensure t
    :config
    (global-set-key (kbd "C-c p") 'helm-projectile)
    (global-set-key (kbd "C-c P") 'helm-projectile-switch-project)
@@ -27,6 +24,5 @@
    (projectile-discover-projects-in-search-path))
 
 (use-package helm-ag
-   :ensure t
    :config
    (global-set-key (kbd "C-c k") 'helm-ag))

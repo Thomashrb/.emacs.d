@@ -40,21 +40,14 @@
 
 ;; No config needed
 (use-package flycheck
-  :ensure t
   :init (global-flycheck-mode))
 (use-package yasnippet
-  :ensure t
   :init (yas-global-mode 1))
-(use-package highlight-symbol
-  :ensure t)
+(use-package highlight-symbol)
 (use-package company
-  :ensure t
   :hook (prog-mode . company-mode))
-(use-package restclient
-  :ensure t)
-(use-package undo-tree
-  :ensure t)
+(use-package restclient)
+(use-package undo-tree)
 (use-package jump-char
-  :ensure t
   :init
   (global-set-key (kbd "C-c f") 'jump-char-forward))
