@@ -18,7 +18,5 @@
    (setq sbt:program-options '("-Dsbt.supershell=false")))
 
 (use-package lsp-mode
-  :commands lsp
   :hook (scala-mode . lsp)
-  :config
-  (setq lsp-prefer-flymake nil))
+  :config (setq lsp-prefer-flymake nil))

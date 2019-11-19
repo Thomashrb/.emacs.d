@@ -12,5 +12,4 @@
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
 (use-package company-lsp)
 
-(push 'company-lsp company-backends)
 ;;; lsp-init.el ends here
