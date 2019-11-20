@@ -1,12 +1,15 @@
 ;;-----------------------------;;
 ;; Theme                       ;;
 ;;-----------------------------;;
-
-
 (use-package doom-themes
   :defer t
   :init
-  (load-theme 'doom-one t))
+  (load-theme 'doom-one t)
+  (setq doom-themes-enable-bold t
+	doom-themes-enable-italic t
+	;; doom-one specific settings
+	doom-one-brighter-modeline nil
+	doom-one-brighter-comments nil))
 
 ;; from https://github.com/hlissner/emacs-doom-themes
 ;; (let ((height (face-attribute 'default :height))))

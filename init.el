@@ -14,16 +14,12 @@
 
 ;; General emacs configs
 (load "~/.emacs.d/lisp/myinit.el")
+(load "~/.emacs.d/lisp/theme.el")
 (load "~/.emacs.d/lisp/cleanup.el")
 (load "~/.emacs.d/lisp/appearance.el")
-(load "~/.emacs.d/lisp/theme.el")
-(load "~/.emacs.d/lisp/modeline.el")
-(load "~/.emacs.d/lisp/nav.el")
 (load "~/.emacs.d/lisp/helm.el")
-(load "~/.emacs.d/lisp/dumb-jump.el")
 (load "~/.emacs.d/lisp/git-init.el")
-(load "~/.emacs.d/lisp/rainbow-init.el")
-(load "~/.emacs.d/lisp/mc.el")
+(load "~/.emacs.d/lisp/general-init.el")
 ;(load "~/.emacs.d/lisp/nixos-init.el") ;; Disable when not on nixos
 ;(load "~/.emacs.d/lisp/languages/nix-init.el")
 ;; Language support
@@ -34,21 +30,7 @@
 (load "~/.emacs.d/lisp/languages/python-init.el")
 (load "~/.emacs.d/lisp/languages/rust-init.el")
 (load "~/.emacs.d/lisp/languages/elm-init.el")
-(load "~/.emacs.d/lisp/languages/yaml-init.el")
+(load "~/.emacs.d/lisp/languages/config-init.el")
 ;; Social
 (load "~/.emacs.d/lisp/irc.el")
 ;(load "~/.emacs.d/lisp/gmail.el")
-
-;; Little to no config needed
-(use-package flycheck
-  :init (global-flycheck-mode))
-(use-package yasnippet
-  :init (yas-global-mode 1))
-(use-package highlight-symbol)
-(use-package company
-  :hook (prog-mode . company-mode))
-(use-package restclient)
-(use-package undo-tree)
-(use-package jump-char
-  :init
-  (global-set-key (kbd "C-c f") 'jump-char-forward))

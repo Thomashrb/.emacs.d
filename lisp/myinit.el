@@ -27,5 +27,4 @@
       '((company-files          ; files & directory
 	 company-keywords       ; keywords
 	 company-yasnippet)
-	(company-abbrev company-dabbrev)
-	))
+	(company-abbrev company-dabbrev)))

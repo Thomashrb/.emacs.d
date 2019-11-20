@@ -1,5 +1,3 @@
-(use-package toml-mode)
-
 (use-package rust-mode
   :hook (rust-mode . lsp))
 
