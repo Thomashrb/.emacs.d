@@ -5,11 +5,15 @@
   :defer t
   :init
   (load-theme 'doom-one t)
+  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+  (doom-themes-treemacs-config)
+  (doom-themes-org-config) ; Corrects org-mode's native fontification
   (setq doom-themes-enable-bold t
-	doom-themes-enable-italic t
-	;; doom-one specific settings
-	doom-one-brighter-modeline nil
-	doom-one-brighter-comments nil))
+	      doom-themes-enable-italic t
+	      ;; doom-one specific settings
+	      doom-one-brighter-modeline nil
+	      doom-one-brighter-comments nil)
+  )
 
 ;; from https://github.com/hlissner/emacs-doom-themes
 ;; (let ((height (face-attribute 'default :height))))
