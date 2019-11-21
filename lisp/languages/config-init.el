@@ -10,4 +10,12 @@
 
 (use-package toml-mode
   :mode (("\\.toml\\'" . yaml-mode)))
+
+
+(use-package json-mode
+  :mode (("\\.json\\'" . json-mode)))
+
+(use-package json-reformat)
+
+(use-package json-snatcher)
 ;;; config-init.el ends here
