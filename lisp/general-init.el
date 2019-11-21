@@ -28,11 +28,6 @@
 	 ("M-g z" . dumb-jump-go-prefer-external-other-window))
   :config (setq dumb-jump-selector 'helm))
 
-(use-package nav
-  :defer t
-  :config
-  (global-set-key (kbd "<f8>") 'nav-toggle))
-
 (use-package multiple-cursors
   :config
   (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
@@ -41,7 +36,7 @@
   (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this))
 
 (use-package comment-tags
-  :hook (prog-mode . comment-tags-mode)) 
+  :hook (prog-mode . comment-tags-mode))
 
 (use-package flycheck
   :init
