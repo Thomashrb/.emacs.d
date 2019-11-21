@@ -1,23 +1,23 @@
 ;; Melpa repo
-(require 'package) ;; You might already have this line
+(require 'package)
+(setq package-enable-at-startup nil)
 (setq package-archives
-      '(("GNU ELPA"     . "http://elpa.gnu.org/packages/")
-	("MELPA Stable" . "https://stable.melpa.org/packages/")
-	("MELPA"        . "https://melpa.org/packages/"))
-      package-archive-priorities
-      '(("MELPA Stable" . 10)
-	("GNU ELPA"     . 5)
-	("MELPA"        . 0)))
+      '(("gnu"          . "http://elpa.gnu.org/packages/")
+	("melpa-stable" . "https://stable.melpa.org/packages/")
+	("melpa"        . "https://melpa.org/packages/")))
 
-;; Get use-package so we can pull the rest of ouer deps
+(package-initialize)
+
+;; Bootstrap `use-package'
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
 (eval-when-compile
   (require 'use-package))
 
-;; set ensure to true always
-(setq use-package-always-ensure t)
+;; Always set `:ensure t`
+(with-eval-after-load 'use-package
+  (setq use-package-always-ensure t))
 
 ;; enable company golbaly
 (add-hook 'after-init-hook 'global-company-mode)
