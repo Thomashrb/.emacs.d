@@ -12,4 +12,19 @@
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
 (use-package company-lsp)
 
+;; Enable tree-view for lsp
+(use-package treemacs
+  :config
+  (progn
+    (treemacs-follow-mode t)
+    (treemacs-filewatch-mode t)
+    (treemacs-fringe-indicator-mode t)))
+(use-package treemacs-projectile
+  :after treemacs)
+(use-package lsp-treemacs
+  :after treemacs
+  :config
+  (lsp-metals-treeview-enable t)
+  (setq lsp-metals-treeview-show-when-views-received t))
+
 ;;; lsp-init.el ends here
