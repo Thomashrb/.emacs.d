@@ -41,17 +41,7 @@
   (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this))
 
 (use-package comment-tags
-  :hook (prog-mode . comment-tags-mode)
-  :init
-  (setq comment-tags-keyword-faces
-	'(("TODO" . ,(list :weight 'bold :foreground "#28ABE3"))
-	  ("FIXME" . ,(list :weight 'bold :foreground "#DB3340"))
-	  ("BUG" . ,(list :weight 'bold :foreground "#DB3340"))
-	  ("HACK" . ,(list :weight 'bold :foreground "#E8B71A"))
-	  ("KLUDGE" . ,(list :weight 'bold :foreground "#E8B71A"))
-	  ("XXX" . ,(list :weight 'bold :foreground "#F7EAC8"))
-	  ("INFO" . ,(list :weight 'bold :foreground "#F7EAC8"))
-	  ("DONE" . ,(list :weight 'bold :foreground "#1FDA9A")))))
+  :hook (prog-mode . comment-tags-mode)) 
 
 (use-package flycheck
   :init
