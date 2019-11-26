@@ -1,5 +1,6 @@
 (use-package highlight-symbol)
 (use-package restclient)
+(use-package ob-restclient) ; org-babel restclient
 (use-package undo-tree)
 
 (use-package nyan-mode
