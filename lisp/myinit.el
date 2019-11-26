@@ -31,3 +31,7 @@
 
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode))
+
+;; Enable flyspell for prog mode and text mode
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
