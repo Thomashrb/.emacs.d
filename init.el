@@ -30,6 +30,7 @@
 (load "~/.emacs.d/lisp/languages/python-init.el")
 (load "~/.emacs.d/lisp/languages/rust-init.el")
 (load "~/.emacs.d/lisp/languages/elm-init.el")
+(load "~/.emacs.d/lisp/languages/cl-init.el")
 (load "~/.emacs.d/lisp/languages/config-init.el")
 ;; Social
 (load "~/.emacs.d/lisp/irc.el")
