@@ -2,6 +2,7 @@
 (use-package restclient)
 (use-package ob-restclient) ; org-babel restclient
 (use-package undo-tree)
+(use-package smartparens)
 
 (use-package nyan-mode
   :init (nyan-mode t))
@@ -23,10 +24,10 @@
 ;; Jump to definition stupidly
 (use-package dumb-jump
   :bind (("M-g o" . dumb-jump-go-other-window)
-	 ("M-g j" . dumb-jump-go)
-	 ("M-g i" . dumb-jump-go-prompt)
-	 ("M-g x" . dumb-jump-go-prefer-external)
-	 ("M-g z" . dumb-jump-go-prefer-external-other-window))
+         ("M-g j" . dumb-jump-go)
+         ("M-g i" . dumb-jump-go-prompt)
+         ("M-g x" . dumb-jump-go-prefer-external)
+         ("M-g z" . dumb-jump-go-prefer-external-other-window))
   :config (setq dumb-jump-selector 'helm))
 
 (use-package multiple-cursors
@@ -44,22 +45,22 @@
   (progn
     (define-fringe-bitmap 'my-flycheck-fringe-indicator
       (vector #b00000000
-	      #b00000000
-	      #b00000000
-	      #b00000000
-	      #b00000000
-	      #b00000000
-	      #b00000000
-	      #b00011100
-	      #b00111110
-	      #b00111110
-	      #b00111110
-	      #b00011100
-	      #b00000000
-	      #b00000000
-	      #b00000000
-	      #b00000000
-	      #b00000000))
+              #b00000000
+              #b00000000
+              #b00000000
+              #b00000000
+              #b00000000
+              #b00000000
+              #b00011100
+              #b00111110
+              #b00111110
+              #b00111110
+              #b00011100
+              #b00000000
+              #b00000000
+              #b00000000
+              #b00000000
+              #b00000000))
 
     (flycheck-define-error-level 'error
       :severity 2

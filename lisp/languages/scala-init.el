@@ -19,4 +19,4 @@
 
 (use-package lsp-mode
   :hook (scala-mode . lsp)
-  :config (setq lsp-prefer-flymake nil))
+  :config (setq lsp-prefer-flymake t))
