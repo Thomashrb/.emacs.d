@@ -1,25 +1,15 @@
 ;;-----------------------------;;
 ;; Theme                       ;;
 ;;-----------------------------;;
-(use-package doom-themes
+
+(use-package zenburn-theme
   :defer t
   :init
-  (load-theme 'doom-one t)
-  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
-  (doom-themes-treemacs-config)
-  (doom-themes-org-config) ; Corrects org-mode's native fontification
-  (setq doom-themes-enable-bold t
-	      doom-themes-enable-italic t
-	      ;; doom-one specific settings
-	      doom-one-brighter-modeline nil
-	      doom-one-brighter-comments nil)
-  )
+  (load-theme 'zenburn t))
 
-;; from https://github.com/hlissner/emacs-doom-themes
-;; (let ((height (face-attribute 'default :height))))
-;;  ;; for all linum/nlinum users
-;;  (set-face-attribute 'linum nil :height height)
-;;  ;; only for `linum-relative' users:
-;;  (set-face-attribute 'linum-relative-current-face nil :height height)
-;;  ;; only for `nlinum-relative' users:
-;;  (set-face-attribute 'nlinum-relative-current-face nil :height height))
+;; (use-package spacemacs-theme
+;;   :defer t
+;;   :init
+;;   (load-theme 'spacemacs-dark t)
+;;   (setq spacemacs-theme-org-agenda-height nil)
+;;   (setq spacemacs-theme-org-height nil))
