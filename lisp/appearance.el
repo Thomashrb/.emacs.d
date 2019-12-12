@@ -11,3 +11,6 @@
 ;; Whitespace
 (setq-default show-trailing-whitespace t)
 (add-hook 'before-save-hook 'whitespace-cleanup)
+
+;; Show parens
+(show-paren-mode t)
