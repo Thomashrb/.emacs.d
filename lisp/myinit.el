@@ -35,3 +35,11 @@
 ;; Enable flyspell for prog mode and text mode
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
+
+;; Whitespace cleanup
+;(add-hook 'before-save-hook 'whitespace-cleanup)
+
+;; Use spaces instead of tabs
+(setq-default c-basic-indent 2)
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)

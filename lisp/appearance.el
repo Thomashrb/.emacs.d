@@ -8,9 +8,11 @@
 (set-frame-font "Inconsolata 11" nil t)
 (setq default-frame-alist '((font . "Inconsolata 11"))) ;;; set default font for emacs --daemon / emacsclient
 
-;; Whitespace
+;; Highlight trailing whitespace
 (setq-default show-trailing-whitespace t)
-(add-hook 'before-save-hook 'whitespace-cleanup)
+
+;; Highlight tabs
+(setq-default highlight-tabs t)
 
 ;; Show parens
 (show-paren-mode t)
