@@ -7,6 +7,7 @@
   :hook
   (scala-mode . lsp)
   (elixir-mode . lsp)
+  (rust-mode . lsp)
   :config
   (setq lsp-prefer-flymake t))
 
