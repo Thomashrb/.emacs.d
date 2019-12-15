@@ -2,14 +2,14 @@
 ;;; Commentary:
 ;;; Everything non language specific tied to lsp
 ;;; Code:
+
+;; NOTE: must install the different ls's
 (use-package lsp-mode
-  :after (company lsp-mode)
+  :after (company)
   :hook
   (scala-mode . lsp)
   (elixir-mode . lsp)
-  (rust-mode . lsp)
-  :config
-  (setq lsp-prefer-flymake t))
+  (rust-mode . lsp))
 
 (use-package lsp-ui
   :after (lsp-mode))

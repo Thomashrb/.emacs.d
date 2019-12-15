@@ -8,16 +8,8 @@
 (use-package ghc)
 ;;----------------------
 
-;(use-package company-ghc)
-
 (use-package dante
   :after haskell-mode
   :commands 'dante-mode
   :config
-;;  (add-to-list 'company-backends 'company-ghc)
-  (add-hook 'haskell-mode-hook 'dante-mode)
-  (add-hook 'haskell-mode-hook 'flycheck-mode)
-  ;; to use hlint
-  (add-hook 'dante-mode-hook
-	    '(lambda () (flycheck-add-next-checker 'haskell-dante
-						   '(warning . haskell-hlint)))))
+  (add-hook 'haskell-mode-hook 'dante-mode))
