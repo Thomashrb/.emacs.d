@@ -3,6 +3,7 @@
 (use-package ob-restclient) ; org-babel restclient
 (use-package undo-tree)
 (use-package smartparens)
+(use-package flymake-easy)
 
 (use-package nyan-mode
   :init (nyan-mode t))
