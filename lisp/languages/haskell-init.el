@@ -3,12 +3,15 @@
 ;; needs a shell.nix file
 ;; test that this works by invoking nix-shell with no options
 ;; ---------------------
-(use-package haskell-mode)
+(use-package haskell-mode
+  :defer t)
 
-(use-package ghc)
+(use-package ghc
+  :defer t)
 ;;----------------------
 
 (use-package dante
+  :defer t
   :after haskell-mode
   :commands 'dante-mode
   :config

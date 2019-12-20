@@ -3,7 +3,8 @@
 ;;; Everything elm lang specific
 ;;; http://www.lambdacat.com/post-modern-emacs-setup-for-el/
 ;;; Code:
-(use-package elm-mode)
+(use-package elm-mode
+  :defer t)
 
 ;; npm install -g elm-oracle
 ;(use-package elm-oracle

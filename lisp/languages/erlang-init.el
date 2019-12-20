@@ -1,1 +1,2 @@
-(use-package erlang)
+(use-package erlang
+  :defer t)
