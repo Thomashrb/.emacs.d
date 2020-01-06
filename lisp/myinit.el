@@ -3,8 +3,8 @@
 (setq package-enable-at-startup nil)
 (setq package-archives
       '(("gnu"          . "http://elpa.gnu.org/packages/")
-	("melpa-stable" . "https://stable.melpa.org/packages/")
-	("melpa"        . "https://melpa.org/packages/")))
+        ("melpa-stable" . "https://stable.melpa.org/packages/")
+        ("melpa"        . "https://melpa.org/packages/")))
 
 (package-initialize)
 
@@ -25,9 +25,9 @@
 ;; set default `company-backends'
 (setq company-backends
       '((company-files          ; files & directory
-	 company-keywords       ; keywords
-	 company-yasnippet)
-	(company-abbrev company-dabbrev)))
+         company-keywords       ; keywords
+         company-yasnippet)
+        (company-abbrev company-dabbrev)))
 
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode))

@@ -23,5 +23,10 @@
    (global-set-key (kbd "C-c p") 'helm-projectile)
    (global-set-key (kbd "C-c P") 'helm-projectile-switch-project)
    (global-set-key (kbd "C-c k") 'helm-projectile-ag)
-   (setq projectile-project-search-path '("~/development/beat" "~/development/beat/delivery" "~/development/rust" "~/development/python" "~/git"))
+   (setq projectile-project-search-path '("~/development/beat"
+                                          "~/development/beat/delivery"
+                                          "~/development/rust"
+                                          "~/development/python"
+                                          "~/development/elixir"
+                                          "~/git"))
    (projectile-discover-projects-in-search-path))
