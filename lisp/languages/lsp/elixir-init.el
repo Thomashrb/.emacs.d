@@ -8,3 +8,6 @@
   (add-hook 'before-save-hook 'whitespace-cleanup)
   :bind
   ("C-c C-f" . elixir-format))
+
+(use-package exunit
+  :defer t)
