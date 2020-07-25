@@ -35,6 +35,7 @@
 (load "~/.emacs.d/lisp/languages/lua-init.el")
 (load "~/.emacs.d/lisp/languages/php-init.el")
 (load "~/.emacs.d/lisp/languages/config-init.el")
+(load "~/.emacs.d/lisp/languages/go-init.el")
 ;(load "~/.emacs.d/lisp/languages/erlang-init.el")
 ;(load "~/.emacs.d/lisp/languages/clojure-init.el")
 ;; Social
