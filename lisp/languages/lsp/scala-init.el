@@ -5,6 +5,9 @@
 (use-package scala-mode
   :mode "\\.s\\(cala\\|bt\\)$")
 
+(use-package lsp-metals
+  :ensure t)
+
 (use-package sbt-mode
   :commands sbt-start sbt-command
   :config

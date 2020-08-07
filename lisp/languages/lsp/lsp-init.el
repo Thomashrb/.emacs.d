@@ -18,7 +18,7 @@
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
 (use-package company-lsp
   :config
-  (push 'company-lsp company-backends))
+  (push 'company-capf company-backends))
 ;; alternatice to company-lsp
 ;(use-package helm-lsp)
 
