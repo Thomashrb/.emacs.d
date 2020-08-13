@@ -1,9 +1,16 @@
 (use-package highlight-symbol)
-(use-package restclient)
-(use-package ob-restclient) ; org-babel restclient
 (use-package undo-tree)
 (use-package smartparens)
 (use-package flymake-easy)
+
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((shell . t)))
+
+
+(use-package restclient)
+(use-package ob-restclient) ; org-babel restclient
 
 (use-package nyan-mode
   :init (nyan-mode t))
