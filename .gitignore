@@ -1,3 +1,5 @@
+.dap-breakpoints
+anaconda-mode/
 games/*
 auto-save-list/*
 elpa/*
