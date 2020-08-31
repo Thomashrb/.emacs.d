@@ -26,6 +26,8 @@
    (global-set-key (kbd "C-c K") 'helm-projectile-rg)
    (setq projectile-project-search-path '("~/development/beat"
                                           "~/development/beat/delivery"
+                                          "~/development/beat/ingest"
+                                          "~/development/beat/ops"
                                           "~/development/rust"
                                           "~/development/python"
                                           "~/development/elixir"
