@@ -41,4 +41,3 @@
 ;(load "~/.emacs.d/lisp/languages/clojure-init.el")
 ;; Social
 (load "~/.emacs.d/lisp/irc.el")
-;(load "~/.emacs.d/lisp/gmail.el")
