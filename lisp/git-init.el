@@ -1,10 +1,6 @@
 ;; Sidebar with gitmarkers
 (use-package git-gutter)
 
-(use-package magit-gitflow
-  :config
-  (add-hook 'magit-mode-hook 'turn-on-magit-gitflow))
-
 ;; Git porcelain
 (use-package magit
   :defer t
