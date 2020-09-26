@@ -15,5 +15,7 @@ tramp
 .lsp-session-v1
 projectile-bookmarks.eld
 transient/
-backups/
+
+# keep directory but ignore contents
+backups/*
 !backups/.gitkeep
