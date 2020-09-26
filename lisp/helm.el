@@ -31,5 +31,6 @@
                                           "~/development/rust"
                                           "~/development/python"
                                           "~/development/elixir"
+                                          "~/development/bpftrace"
                                           "~/git"))
    (projectile-discover-projects-in-search-path))
