@@ -1,10 +1,10 @@
 .dap-breakpoints
 anaconda-mode/
-games/*
-auto-save-list/*
-elpa/*
-url/*
-eshell/*
+games
+auto-save-list/
+elpa/
+url/
+eshell/
 recentf
 .mc-lists.el
 bookmarks
@@ -15,3 +15,5 @@ tramp
 .lsp-session-v1
 projectile-bookmarks.eld
 transient/
+backups/
+!backups/.gitkeep
