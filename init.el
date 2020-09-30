@@ -20,8 +20,6 @@
 (load "~/.emacs.d/lisp/helm.el")
 (load "~/.emacs.d/lisp/git-init.el")
 (load "~/.emacs.d/lisp/general-init.el")
-;(load "~/.emacs.d/lisp/nixos-init.el") ;; Disable when not on nixos
-;(load "~/.emacs.d/lisp/languages/nix-init.el")
 ;; Language support
 (load "~/.emacs.d/lisp/languages/lsp/lsp-init.el")
 (load "~/.emacs.d/lisp/languages/lsp/scala-init.el")
