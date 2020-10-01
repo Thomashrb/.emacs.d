@@ -29,15 +29,6 @@
   :init
   (global-set-key (kbd "C-c f") 'jump-char-forward))
 
-;; Jump to definition stupidly
-(use-package dumb-jump
-  :bind (("M-g o" . dumb-jump-go-other-window)
-         ("M-g j" . dumb-jump-go)
-         ("M-g i" . dumb-jump-go-prompt)
-         ("M-g x" . dumb-jump-go-prefer-external)
-         ("M-g z" . dumb-jump-go-prefer-external-other-window))
-  :config (setq dumb-jump-selector 'helm))
-
 (use-package multiple-cursors
   :config
   (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
