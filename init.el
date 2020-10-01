@@ -17,7 +17,8 @@
 (load "~/.emacs.d/lisp/theme.el")
 (load "~/.emacs.d/lisp/cleanup.el")
 (load "~/.emacs.d/lisp/appearance.el")
-(load "~/.emacs.d/lisp/helm.el")
+;;(load "~/.emacs.d/lisp/helm.el")
+(load "~/.emacs.d/lisp/ivy.el")
 (load "~/.emacs.d/lisp/git-init.el")
 (load "~/.emacs.d/lisp/general-init.el")
 ;; Language support
