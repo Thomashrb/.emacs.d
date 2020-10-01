@@ -19,8 +19,6 @@
 (use-package company-lsp
   :config
   (push 'company-capf company-backends))
-;; alternatice to company-lsp
-;(use-package helm-lsp)
 
 ;; Enable tree-view for lsp
 (use-package all-the-icons)
