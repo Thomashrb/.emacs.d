@@ -50,5 +50,5 @@
 (use-package swiper
   :defer t
   :config
-  (global-set-key "\C-s" 'swiper)
-  (global-set-key "\C-r" 'swiper-all))
+  (global-set-key (kbd "C-c s") 'swiper)
+  (global-set-key (kbd "C-c S") 'swiper-all))
