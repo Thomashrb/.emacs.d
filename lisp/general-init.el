@@ -37,3 +37,5 @@
 
 (use-package comment-tags
   :hook (prog-mode . comment-tags-mode))
+
+(global-set-key (kbd "C-x B") 'ibuffer)
