@@ -22,9 +22,11 @@
 (use-package company
   :hook (prog-mode . company-mode))
 
-(use-package jump-char
-  :init
-  (global-set-key (kbd "C-c f") 'jump-char-forward))
+(use-package avy
+  :config
+  (global-set-key (kbd "C-c f") 'avy-goto-char)
+  (global-set-key (kbd "C-c F") 'avy-goto-char-2)
+  (global-set-key (kbd "M-g g") 'avy-goto-line))
 
 (use-package multiple-cursors
   :config
