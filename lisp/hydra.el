@@ -41,4 +41,7 @@ Git gutter:
      ("o" org-clock-out "Clock-Out") ; you might also want (setq org-log-note-clock-out t)
      ("j" org-clock-goto "Clock Goto") ; global visit the clocked task
      ("c" org-capture "Capture") ; Don't forget to define the captures you want http://orgmode.org/manual/Capture.html
-     ("l" org-capture-goto-last-stored "Last Capture"))))
+     ("l" org-capture-goto-last-stored "Last Capture")
+     ("n" org-next-link "Next Link")
+     ("p" org-previous-link "Prev Link")
+     ("O" org-open-at-point "Open link"))))
