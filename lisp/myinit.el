@@ -41,3 +41,13 @@
 (setq-default c-basic-indent 2)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
+
+;; Path
+;; (setq exec-path '("~/bin"
+;;                   "/run/setuid-programs"
+;;                   "~/.config/guix/current/bin"
+;;                   "~/.guix-profile/bin"
+;;                   "~/.guix-profile/sbin"
+;;                   "/run/current-system/profile/bin"
+;;                   "/run/current-system/profile/sbin"
+;;                   "~/dotfiles/emacs/"))
