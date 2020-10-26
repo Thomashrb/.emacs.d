@@ -43,11 +43,12 @@
 (setq-default indent-tabs-mode nil)
 
 ;; Path
-;; (setq exec-path '("~/bin"
-;;                   "/run/setuid-programs"
-;;                   "~/.config/guix/current/bin"
-;;                   "~/.guix-profile/bin"
-;;                   "~/.guix-profile/sbin"
-;;                   "/run/current-system/profile/bin"
-;;                   "/run/current-system/profile/sbin"
-;;                   "~/dotfiles/emacs/"))
+(when (equal "guix" system-name)
+  (setq exec-path '("~/bin"
+                  "/run/setuid-programs"
+                  "~/.config/guix/current/bin"
+                  "~/.guix-profile/bin"
+                  "~/.guix-profile/sbin"
+                  "/run/current-system/profile/bin"
+                  "/run/current-system/profile/sbin"
+                  "~/dotfiles/emacs/")))
