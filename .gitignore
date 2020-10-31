@@ -21,6 +21,9 @@ forge-database.sqlite
 request
 timelog
 
+# pulled from https://github.com/AndreaCrotti/yasnippet-snippets
+snippets
+
 # keep directory but ignore contents
 backups/*
 !backups/.gitkeep
