@@ -17,3 +17,7 @@
   (moe-theme-apply-color 'yellow)
   ;; Choose what you like, (moe-light) or (moe-dark)
   (moe-dark))
+
+
+(use-package nyan-mode
+  :init (nyan-mode t))

@@ -14,9 +14,6 @@
 (use-package restclient)
 (use-package ob-restclient) ; org-babel restclient
 
-(use-package nyan-mode
-  :init (nyan-mode t))
-
 ;; Rainbowdelimiters - Visualy pair up delimiters
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
