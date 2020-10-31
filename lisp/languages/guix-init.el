@@ -8,9 +8,6 @@
       (require 'geiser-guile))
     (add-to-list 'geiser-guile-load-path "~/git/guix")))
 
-(use-package flycheck-guile
-  :after (flycheck geiser))
-
 ;; Snipped from:
 ;; https://github.com/jsoo1/dotfiles/blob/master/emacs/init.el
 
