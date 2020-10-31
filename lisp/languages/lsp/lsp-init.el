@@ -14,8 +14,14 @@
 (use-package lsp-ui
   :after (lsp-mode))
 
-(use-package dap-mode)
-;; (use-package dap-LANGUAGE) to load the dap adapter for your language
+(use-package dap-mode
+  :hook
+  (lsp-mode . dap-mode)
+  (lsp-mode . dap-ui-mode))
+
+(use-package posframe
+  :after (dap-mode))
+
 (use-package company-lsp
   :config
   (push 'company-capf company-backends))
