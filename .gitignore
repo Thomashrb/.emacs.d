@@ -16,6 +16,10 @@ tramp
 projectile-bookmarks.eld
 projectile.cache
 transient/
+.org-id-locations
+forge-database.sqlite
+request
+timelog
 
 # keep directory but ignore contents
 backups/*
