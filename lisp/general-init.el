@@ -2,6 +2,11 @@
 (use-package smartparens)
 (use-package flymake-easy)
 
+;; get syntax check popups
+(use-package flycheck
+  :config
+  (add-hook 'after-init-hook #'global-flycheck-mode))
+
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((shell . t)))
