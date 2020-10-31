@@ -6,4 +6,6 @@
         '(
           (:jql "project = BP AND labels = Content ORDER BY created DESC"
                 :filename "BP_content")
+          (:jql "project = BP AND sprint in openSprints () "
+                :filename "BP_SPRINT")
           )))
