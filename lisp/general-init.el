@@ -16,10 +16,12 @@
 
 ;; Rainbowdelimiters - Visualy pair up delimiters
 (use-package rainbow-delimiters
-  :hook (prog-mode . rainbow-delimiters-mode))
+  :hook
+  (prog-mode . rainbow-delimiters-mode))
 
 (use-package yasnippet
-  :init (yas-global-mode 1))
+  :config
+  (yas-global-mode 1))
 
 (use-package company
   :hook (prog-mode . company-mode))
