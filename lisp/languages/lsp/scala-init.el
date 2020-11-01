@@ -1,7 +1,9 @@
-;; Metals - lsp for scala
-;;; install metals
-;;; https://scalameta.org/metals/docs/editors/emacs.html
+;;; Metals --- summary
+;; install metals
+;;; Commentary:
+;; https://scalameta.org/metals/docs/editors/emacs.html
 ;; Enable scala-mode and sbt-mode
+;;; Code:
 (use-package scala-mode
   :mode "\\.s\\(cala\\|bt\\)$")
 
@@ -19,3 +21,5 @@
    minibuffer-local-completion-map)
    ;; sbt-supershell kills sbt-mode:  https://github.com/hvesalai/emacs-sbt-mode/issues/152
    (setq sbt:program-options '("-Dsbt.supershell=false")))
+
+;;; scala-init.el ends here
