@@ -1,5 +1,13 @@
+;;; general-init --- Summary
+;; A set of common packages
+;;; Commentary:
+;; After bootstrapping use-package
+;; all other general mode setup should go here
+;;; Code:
 (use-package undo-tree)
-(use-package smartparens)
+(use-package smartparens
+  :hook
+  (prog-mode . smartparens-mode))
 (use-package flymake-easy)
 
 ;; get syntax check popups
@@ -43,3 +51,5 @@
   :hook (prog-mode . comment-tags-mode))
 
 (global-set-key (kbd "C-x B") 'ibuffer)
+
+;;; general-init.el ends here
