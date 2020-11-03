@@ -19,6 +19,7 @@
 (load "~/.emacs.d/lisp/git-init.el")
 (load "~/.emacs.d/lisp/general-init.el")
 (load "~/.emacs.d/lisp/tramp-init.el")
+(load "~/.emacs.d/lisp/org.el")
 ;; Language support
 (load "~/.emacs.d/lisp/languages/lsp/lsp-init.el")
 (load "~/.emacs.d/lisp/languages/lsp/scala-init.el")
@@ -39,4 +40,3 @@
 ;(load "~/.emacs.d/lisp/languages/clojure-init.el")
 ;; Social
 (load "~/.emacs.d/lisp/irc.el")
-(load "~/.emacs.d/lisp/jira.el")

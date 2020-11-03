@@ -1,3 +1,16 @@
+;;; org --- Summary:
+;;
+;;; Commentary:
+;;
+;; Using variables:
+;; #+MACRO: clientname Jane Doe
+;; On export {{{clientname}}} will expand to Jane Doe.
+;;; Code:
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((shell . t)))
+
+
 ;; (make-directory "~/.org-jira")
 (use-package org-jira
   :config
@@ -9,3 +22,4 @@
           (:jql "project = BP AND sprint in openSprints () "
                 :filename "BP_SPRINT")
           )))
+;;; org.el ends here
