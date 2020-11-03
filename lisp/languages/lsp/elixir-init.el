@@ -7,7 +7,8 @@
   :init
   (add-hook 'before-save-hook 'whitespace-cleanup)
   :bind
-  ("C-c C-f" . elixir-format))
+  (:map elixir-mode-map
+        ("C-c C-f" . elixir-format)))
 
 (use-package exunit
   :defer t)
