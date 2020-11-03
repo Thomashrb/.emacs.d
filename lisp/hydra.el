@@ -45,7 +45,7 @@
      ("p" org-previous-link "Prev Link")
      ("O" org-open-at-point "Open link")))
   (global-set-key
-   (kbd "C-c C-o")
+   (kbd "C-c (")
     (defhydra ptrv/smartparens (:hint nil)
     "
     Sexps (quit with _q_)
