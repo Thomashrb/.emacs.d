@@ -5,10 +5,7 @@
   :defer t
   :after (flymake-elixir flymake-easy)
   :init
-  (add-hook 'before-save-hook 'whitespace-cleanup)
-  :bind
-  (:map elixir-mode-map
-        ("C-c C-f" . elixir-format)))
+  (add-hook 'before-save-hook 'whitespace-cleanup))
 
 (use-package exunit
   :defer t)

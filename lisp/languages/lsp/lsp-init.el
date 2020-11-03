@@ -9,7 +9,10 @@
   :hook
   (scala-mode . lsp)
   (elixir-mode . lsp)
-  (rust-mode . lsp))
+  (rust-mode . lsp)
+  :bind
+  (:map lsp-mode-map
+        ("C-c C-f" . lsp-format-buffer)))
 
 (use-package lsp-ui
   :after (lsp-mode))
