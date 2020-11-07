@@ -1,6 +1,10 @@
 (use-package clj-refactor
   :defer t)
 
+;; https://github.com/borkdude/clj-kondo/blob/master/doc/install.md
+(use-package flycheck-clj-kondo
+  :ensure t)
+
 (use-package cider
   :defer t
   :bind
@@ -12,6 +16,7 @@
   :after
   (clj-refactor)
   (cider)
+  (flycheck-clj-kondo)
   :hook
   (clojure-mode . cider-mode)
   (clojure-mode . yas-minor-mode)
