@@ -21,5 +21,7 @@
                 :filename "BP_content")
           (:jql "project = BP AND sprint in openSprints () "
                 :filename "BP_SPRINT")
+          (:jql "project = BP AND labels = Content AND sprint in openSprints () "
+                :filename "BP_content_SPRINT")
           )))
 ;;; org.el ends here
