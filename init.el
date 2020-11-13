@@ -37,6 +37,7 @@
 ;(load "~/.emacs.d/lisp/languages/haskell-init.el")
 ;(load "~/.emacs.d/lisp/languages/elm-init.el")
 ;(load "~/.emacs.d/lisp/languages/erlang-init.el")
+;(load "~/.emacs.d/lisp/languages/pony-init.el")
 ;(load "~/.emacs.d/lisp/languages/clojure-init.el")
 ;; Social
 (load "~/.emacs.d/lisp/irc.el")

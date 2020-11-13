@@ -2,8 +2,7 @@
   :defer t)
 
 ;; https://github.com/borkdude/clj-kondo/blob/master/doc/install.md
-(use-package flycheck-clj-kondo
-  :ensure t)
+(use-package flycheck-clj-kondo)
 
 (use-package cider
   :defer t
