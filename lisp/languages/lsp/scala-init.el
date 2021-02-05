@@ -4,11 +4,12 @@
 ;; https://scalameta.org/metals/docs/editors/emacs.html
 ;; Enable scala-mode and sbt-mode
 ;;; Code:
+(use-package javadoc-lookup)
+
 (use-package scala-mode
   :mode "\\.s\\(cala\\|bt\\)$")
 
-(use-package lsp-metals
-  :ensure t)
+(use-package lsp-metals)
 
 (use-package sbt-mode
   :commands sbt-start sbt-command
