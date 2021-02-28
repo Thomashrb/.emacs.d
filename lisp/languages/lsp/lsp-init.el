@@ -22,8 +22,8 @@
   (lsp-mode . dap-mode)
   (lsp-mode . dap-ui-mode))
 
-(use-package posframe
-  :after (dap-mode))
+;; (use-package posframe
+;;   :after (dap-mode))
 
 (use-package company-lsp
   :config
