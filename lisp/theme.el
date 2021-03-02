@@ -2,22 +2,24 @@
 ;; Theme                       ;;
 ;;-----------------------------;;
 
-(use-package moe-theme
-  :ensure t
+(use-package doom-themes
   :config
+  ;; Global settings (defaults)
+  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+        doom-themes-enable-italic t) ; if nil, italics is universally disabled
+  (load-theme 'doom-one t)
 
-  ;; Show highlighted buffer-id as decoration. (Default: nil)
-  (setq moe-theme-highlight-buffer-id t)
+  ;; Enable flashing mode-line on errors
+  (doom-themes-visual-bell-config)
 
-  ;; Resize titles (optional).
-  (setq moe-theme-resize-markdown-title '(1.5 1.4 1.3 1.2 1.0 1.0))
-  (setq moe-theme-resize-org-title '(1.5 1.4 1.3 1.2 1.1 1.0 1.0 1.0 1.0))
-  (setq moe-theme-resize-rst-title '(1.5 1.4 1.3 1.2 1.1 1.0))
+  ;; Enable custom neotree theme (all-the-icons must be installed!)
+  (doom-themes-neotree-config)
+  ;; or for treemacs users
+  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+  (doom-themes-treemacs-config)
 
-  (moe-theme-apply-color 'yellow)
-  ;; Choose what you like, (moe-light) or (moe-dark)
-  (moe-dark))
-
+  ;; Corrects (and improves) org-mode's native fontification.
+  (doom-themes-org-config))
 
 (use-package nyan-mode
   :init (nyan-mode t))
