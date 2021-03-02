@@ -35,7 +35,7 @@
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 
 ;; Whitespace cleanup
-;(add-hook 'before-save-hook 'whitespace-cleanup)
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;; Use spaces instead of tabs
 (setq-default c-basic-indent 2)

@@ -3,9 +3,7 @@
 
 (use-package elixir-mode
   :defer t
-  :after (flymake-elixir flymake-easy)
-  :init
-  (add-hook 'before-save-hook 'whitespace-cleanup))
+  :after (flymake-elixir flymake-easy))
 
 (use-package exunit
   :defer t)
