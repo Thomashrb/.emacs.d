@@ -17,7 +17,7 @@
   (setq jiralib-url "https://beattech.atlassian.net")
   (setq org-jira-custom-jqls
         '(
-          (:jql "project = BP AND labels = Content ORDER BY created DESC"
+          (:jql "project = BP AND status = 'TO DO' AND labels = Content ORDER BY created DESC"
                 :filename "BP_content")
           (:jql "project = BP AND sprint in openSprints () "
                 :filename "BP_SPRINT")
