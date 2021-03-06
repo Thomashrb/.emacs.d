@@ -49,4 +49,7 @@
 
 (global-set-key (kbd "C-x B") 'ibuffer)
 
+(global-set-key (kbd "M-n") 'forward-paragraph)
+(global-set-key (kbd "M-p") 'backward-paragraph)
+
 ;;; general-init.el ends here
