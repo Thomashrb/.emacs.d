@@ -27,3 +27,4 @@ snippets
 # keep directory but ignore contents
 backups/*
 !backups/.gitkeep
+/mymodes/

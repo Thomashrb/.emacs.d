@@ -25,7 +25,8 @@
   (global-set-key (kbd "C-c P") 'helm-projectile-switch-project)
   (global-set-key (kbd "C-c k") 'helm-projectile-ag)
   (global-set-key (kbd "C-c K") 'helm-projectile-rg)
-  (setq projectile-project-search-path '("~/development/beat"
+  (setq projectile-project-search-path '("~/.emacs.d/"
+                                         "~/development/beat"
                                          "~/development/beat/delivery"
                                          "~/development/beat/ingest"
                                          "~/development/beat/ops"
