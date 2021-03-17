@@ -29,6 +29,7 @@
                                          "~/development/beat"
                                          "~/development/beat/delivery"
                                          "~/development/beat/ingest"
+                                         "~/development/beat/stream"
                                          "~/development/beat/ops"
                                          "~/development/rust"
                                          "~/development/python"
