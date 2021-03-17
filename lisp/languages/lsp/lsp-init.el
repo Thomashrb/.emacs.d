@@ -3,7 +3,11 @@
 ;;; Everything non language specific tied to lsp
 ;;; Code:
 
-;; NOTE: must install the different ls's
+;; cannot pull this directly from github because of unresolved dependencies
+;; The following line pulls lsp-mode from melpa before requiring straight to handle it
+;; https://github.com/emacs-lsp/lsp-mode/issues/2179
+(straight-use-package '(lsp-mode :source melpa))
+
 (use-package lsp-mode
   :after (company)
   :hook
@@ -21,13 +25,6 @@
   :hook
   (lsp-mode . dap-mode)
   (lsp-mode . dap-ui-mode))
-
-;; (use-package posframe
-;;   :after (dap-mode))
-
-(use-package company-lsp
-  :config
-  (push 'company-capf company-backends))
 
 ;; Enable tree-view for lsp
 (use-package all-the-icons)

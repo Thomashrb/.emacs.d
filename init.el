@@ -2,8 +2,6 @@
 ;;                Load configurations and packages                 ;;
 ;; =============================================================== ;;
 
-(package-initialize)
-
 ;; Don't litter my init file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file 'noerror)

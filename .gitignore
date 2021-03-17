@@ -28,3 +28,4 @@ snippets
 backups/*
 !backups/.gitkeep
 /mymodes/
+/straight/

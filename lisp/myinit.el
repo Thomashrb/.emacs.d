@@ -1,21 +1,29 @@
 ;; Melpa repo
-(require 'package)
 (setq package-enable-at-startup nil)
 (setq package-archives
       '(("gnu"          . "http://elpa.gnu.org/packages/")
         ("melpa-stable" . "https://stable.melpa.org/packages/")
         ("melpa"        . "https://melpa.org/packages/")))
 
-;; Bootstrap `use-package'
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
-(eval-when-compile
-  (require 'use-package))
+;; Bootstrap `straight'
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
 
-;; Always set `:ensure t`
-(with-eval-after-load 'use-package
-  (setq use-package-always-ensure t))
+;; Bootstrap `use-package'
+(straight-use-package 'use-package)
+
+;; Always set `:straight t`
+(setq straight-use-package-by-default t)
 
 ;; enable company golbaly
 (add-hook 'after-init-hook 'global-company-mode)

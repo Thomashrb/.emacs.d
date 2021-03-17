@@ -33,6 +33,7 @@
     (:name "ops" :sort-order newest-first :search-type 'tree :query "tag:ops" :key ,(kbd "o"))
     (:name "content" :sort-order newest-first :search-type 'tree :query "tag:content" :key ,(kbd "c"))
     (:name "gitter" :sort-order newest-first :search-type 'tree :query "tag:gitter" :key ,(kbd "g"))
+    (:name "gitlab" :sort-order newest-first :search-type 'tree :query "tag:gitlab" :key ,(kbd "G"))
     (:name "flagged" :sort-order newest-first :search-type 'tree :query "tag:flagged" :key ,(kbd "f"))
     (:name "sent" :sort-order newest-first :search-type 'tree :query "tag:sent" :key ,(kbd "t"))
     (:name "drafts" :sort-order newest-first :search-type 'tree :query "tag:draft" :key ,(kbd "D"))

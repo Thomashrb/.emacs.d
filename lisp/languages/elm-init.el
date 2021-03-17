@@ -7,7 +7,6 @@
   :defer t)
 
 ;; npm install -g elm-oracle
-;(use-package elm-oracle
-;  :ensure t)
+;(use-package elm-oracle)
 
 ;;; elm-init.el ends here
