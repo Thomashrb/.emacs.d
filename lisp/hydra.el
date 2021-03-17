@@ -29,7 +29,18 @@
                  (git-gutter:clear))
       :color blue)))
   (global-set-key
-   (kbd "C-c o")
+   (kbd "C-c o j")
+   (defhydra hydra-org-jira (:color blue)
+     "Org Jiras"
+     ("j" org-jira-get-issues-from-custom-jql "custom jql")
+     ("i" org-jira-get-issues "get issues")
+     ("r" org-jira-refresh-issue "refresh issue")
+     ("R" org-jira-refresh-issues-in-buffer "refresh buffer issues")
+     ("p" org-jira-progress-issue "progress issue")
+     ("c" org-jira-add-comment "comment issue")
+     ("q" nil "quit" :color blue)))
+  (global-set-key
+   (kbd "C-c o o")
    (defhydra hydra-global-org (:color blue)
      "Org"
      ("t" org-timer-start "Start Timer")
