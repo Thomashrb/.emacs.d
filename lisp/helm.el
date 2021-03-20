@@ -3,7 +3,6 @@
   :config
   (helm-mode 1)
   (setq helm-buffers-fuzzy-matching t)
-  (setq helm-autoresize-mode t)
   (setq helm-buffer-max-length 40)
   (global-set-key (kbd "M-x") 'helm-M-x)
   (global-set-key (kbd "C-x b") 'helm-mini)

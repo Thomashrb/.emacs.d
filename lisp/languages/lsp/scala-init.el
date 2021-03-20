@@ -7,6 +7,8 @@
 (use-package javadoc-lookup)
 
 (use-package scala-mode
+  :interpreter
+  ("scala" . scala-mode)
   :mode "\\.s\\(cala\\|bt\\)$")
 
 (use-package lsp-metals)

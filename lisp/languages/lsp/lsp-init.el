@@ -6,9 +6,9 @@
 ;; cannot pull this directly from github because of unresolved dependencies
 ;; The following line pulls lsp-mode from melpa before requiring straight to handle it
 ;; https://github.com/emacs-lsp/lsp-mode/issues/2179
-(straight-use-package '(lsp-mode :source melpa))
 
 (use-package lsp-mode
+  :straight (lsp-mode :source melpa)
   :after (company)
   :hook
   (scala-mode . lsp)
