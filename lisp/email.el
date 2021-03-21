@@ -24,8 +24,6 @@
   ;; and it's a little confusion, but setting these three works for me:
   (setq mail-specify-envelope-from t)
   (setq message-sendmail-envelope-from "thomas@beat.no")
-  (setq mail-envelope-from "thomas@beat.no")
-
   (setq notmuch-saved-searches
   `((:name "inbox" :sort-order newest-first :search-type 'tree :query "tag:inbox" :key ,(kbd "i"))
     (:name "unread" :sort-order newest-first :search-type 'tree :query "tag:unread" :key ,(kbd "u"))
