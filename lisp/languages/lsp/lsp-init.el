@@ -15,6 +15,7 @@
   (rust-mode . lsp)
   (lsp-mode . lsp-lens-mode)
   :config
+  (setq lsp-prefer-flymake nil)
   ;; https://emacs-lsp.github.io/lsp-mode/page/performance/
   (setq gc-cons-threshold 100000000)           ;; 100mb
   (setq read-process-output-max (* 1024 1024)) ;; 1mb

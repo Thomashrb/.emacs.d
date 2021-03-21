@@ -8,7 +8,6 @@
 (use-package smartparens
   :hook
   (prog-mode . smartparens-mode))
-(use-package flymake-easy)
 
 ;; get syntax check popups
 (use-package flycheck
