@@ -26,6 +26,7 @@
 (load "~/.emacs.d/lisp/languages/python-init.el")
 (load "~/.emacs.d/lisp/languages/config-init.el")
 (load "~/.emacs.d/lisp/languages/php-init.el")
+;(load "~/.emacs.d/lisp/languages/nix-init.el")
 ;(load "~/.emacs.d/lisp/languages/lsp/rust-init.el")
 ;(load "~/.emacs.d/lisp/languages/lua-init.el")
 ;(load "~/.emacs.d/lisp/languages/cl-init.el")
