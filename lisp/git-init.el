@@ -1,6 +1,21 @@
 ;; Sidebar with gitmarkers
 (use-package git-gutter)
 
+;; https://oremacs.com/2015/01/17/setting-up-ediff/
+(defmacro csetq (variable value)
+  `(funcall (or (get ',variable 'custom-set)
+                'set-default)
+            ',variable ,value))
+
+(use-package ediff
+  :defer t
+  :init
+  (winner-mode)
+  (add-hook 'ediff-after-quit-hook-internal 'winner-undo)
+  (csetq ediff-window-setup-function 'ediff-setup-windows-plain)
+  (csetq ediff-split-window-function 'split-window-horizontally)
+  (csetq ediff-diff-options "-w"))
+
 ;; Git porcelain
 (use-package magit
   :defer t
