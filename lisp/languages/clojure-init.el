@@ -1,3 +1,7 @@
+;;; clojure-init
+;;; Commentary:
+;;; Handle clojure language setup
+;;; Code:
 (use-package clj-refactor
   :defer t)
 
@@ -20,3 +24,4 @@
   (clojure-mode . cider-mode)
   (clojure-mode . yas-minor-mode)
   (clojure-mode . clj-refactor-mode))
+;;; clojure-init.el ends here
