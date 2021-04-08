@@ -12,7 +12,10 @@
   :defer t
   :bind
   (:map cider-mode-map
-        ("C-c C-f" . cider-format-buffer)))
+        ("C-c C-f" . cider-format-buffer))
+  :hook
+  (cider-repl-mode . company-mode)
+  (cider-mode . company-mode))
 
 (use-package clojure-mode
   :defer t
