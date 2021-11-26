@@ -7,9 +7,9 @@
 (load custom-file 'noerror)
 
 ;; Bootstrap environment
-(load "~/.emacs.d/lisp/myinit.el")
 ;; Load performance configs
 (load "~/.emacs.d/lisp/performance.el")
+(load "~/.emacs.d/lisp/bootstrap.el")
 ;; General emacs configs
 (load "~/.emacs.d/lisp/theme.el")
 (load "~/.emacs.d/lisp/cleanup.el")
