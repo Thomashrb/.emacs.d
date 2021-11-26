@@ -21,20 +21,20 @@
   :defer t
   :init
   (setq magit-auto-revert-mode nil)
-  (global-set-key (kbd "C-c m s") 'magit-status)
-  (global-set-key (kbd "C-c m l") 'magit-log)
-  (global-git-gutter-mode t)
-  :config
-  (with-eval-after-load 'magit
-    (require 'forge)))
-
-;; Work with Git forges, such as Github and Gitlab, from the comfort of Magit and the rest of Emacs.
-;; depends on authinfo
-(use-package forge
-  :defer t
-  :after (magit)
-  :config
-  (add-to-list 'forge-alist '("gitlab.dev.beat.no" "gitlab.dev.beat.no/api/v4" "gitlab.dev.beat.no" forge-gitlab-repository)))
+  (global-set-key (kbd "C-c v /") 'magit-dispatch)
+  (global-set-key (kbd "C-c v .") 'magit-file-dispatch)
+  (global-set-key (kbd "C-c v b") 'magit-branch-checkout)
+  (global-set-key (kbd "C-c v g") 'magit-status)
+  (global-set-key (kbd "C-c v G") 'magit-status-here)
+  (global-set-key (kbd "C-c v D") 'magit-file-delete)
+  (global-set-key (kbd "C-c v B") 'magit-blame-addition)
+  (global-set-key (kbd "C-c v C") 'magit-clone)
+  (global-set-key (kbd "C-c v F") 'magit-fetch)
+  (global-set-key (kbd "C-c v L") 'magit-log-buffer-file)
+  (global-set-key (kbd "C-c v S") 'magit-stage-file)
+  (global-set-key (kbd "C-c v U") 'magit-unstage-file)
+  (global-set-key (kbd "C-c v l") 'magit-log)
+  (global-git-gutter-mode t))
 
 (use-package keychain-environment
   :init
