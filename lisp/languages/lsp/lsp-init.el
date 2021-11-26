@@ -24,7 +24,8 @@
   (setq lsp-completion-provider :capf)         ;; company-capf
   :bind
   (:map lsp-mode-map
-        ("C-c C-f" . lsp-format-buffer)))
+        ("C-c C-f" . lsp-format-buffer)
+        ("C-c C-o" . lsp-organize-imports)))
 
 (use-package lsp-ui
   :after (lsp-mode))
