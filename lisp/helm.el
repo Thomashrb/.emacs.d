@@ -6,7 +6,6 @@
   (setq helm-buffer-max-length 40)
   (global-set-key (kbd "M-x") 'helm-M-x)
   (global-set-key (kbd "C-x b") 'helm-mini)
-  (global-set-key (kbd "C-x r b") 'helm-filtered-bookmarks)
   (global-set-key (kbd "C-x C-f") 'helm-find-files)
   (global-set-key (kbd "M-y") 'helm-show-kill-ring))
 
@@ -15,15 +14,12 @@
   (global-set-key (kbd "C-c s") 'helm-swoop)
   (global-set-key (kbd "C-c S") 'helm-multi-swoop-all))
 
-(use-package helm-ag)
+(use-package helm-rg
+  :after (helm-mode))
 
 (use-package helm-projectile
-  :after (helm-ag)
-  :config
-  (global-set-key (kbd "C-c p") 'helm-projectile)
-  (global-set-key (kbd "C-c P") 'helm-projectile-switch-project)
-  (global-set-key (kbd "C-c k") 'helm-projectile-ag)
-  (global-set-key (kbd "C-c K") 'helm-projectile-rg)
+  :after (helm-rg)
+  :init
   (setq projectile-project-search-path '("~/.emacs.d/"
                                          "~/development/beat"
                                          "~/development/beat/delivery"
@@ -35,10 +31,16 @@
                                          "~/development/elixir"
                                          "~/development/bpftrace"
                                          "~/git"))
-  (projectile-discover-projects-in-search-path))
+  (projectile-discover-projects-in-search-path)
+  (global-set-key (kbd "C-c p f") 'helm-projectile)
+  (global-set-key (kbd "C-c p p") 'helm-projectile-switch-project)
+  (global-set-key (kbd "C-c p s") 'helm-projectile-rg)
+  (global-set-key (kbd "C-c p b") 'helm-projectile-switch-to-buffer)
+  (global-set-key (kbd "C-c p f") 'helm-projectile-find-file)
+  (global-set-key (kbd "C-c p k") 'projectile-kill-buffers)
+  (global-set-key (kbd "C-c p p") 'helm-projectile-switch-project)
+  (global-set-key (kbd "C-c p r") 'helm-projectile-recentf))
 
 ;; list last ran commands first
 (use-package smex)
-
-;; 'pass' integration
-(use-package helm-pass)
+(smex-initialize)
