@@ -10,7 +10,7 @@
 
 (use-package notmuch
   :config
-  (global-set-key (kbd "C-c m m") 'notmuch)
+  (global-set-key (kbd "C-c o m") 'notmuch)
   ;; lessen the load on large inboxes
   (setq notmuch-show-indent-messages-width 0)
   (setq notmuch-show-indent-content nil)
