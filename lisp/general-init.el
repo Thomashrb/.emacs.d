@@ -33,7 +33,6 @@
   :config
   (global-set-key (kbd "C-c f") 'avy-goto-char)
   (global-set-key (kbd "C-c F") 'avy-goto-char-2)
-  (global-set-key (kbd "M-g g") 'avy-goto-line)
   (setq avy-background t))
 
 (use-package multiple-cursors
