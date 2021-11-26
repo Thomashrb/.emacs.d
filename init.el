@@ -6,8 +6,11 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file 'noerror)
 
-;; General emacs configs
+;; Bootstrap environment
 (load "~/.emacs.d/lisp/myinit.el")
+;; Load performance configs
+(load "~/.emacs.d/lisp/performance.el")
+;; General emacs configs
 (load "~/.emacs.d/lisp/theme.el")
 (load "~/.emacs.d/lisp/cleanup.el")
 (load "~/.emacs.d/lisp/appearance.el")
