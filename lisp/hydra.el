@@ -1,7 +1,7 @@
 (use-package hydra
   :init
   (global-set-key
-   (kbd "C-c m g")
+   (kbd "C-c v v")
    (defhydra hydra-git-gutter (:body-pre (git-gutter-mode 1)
                                          :hint nil)
      "
