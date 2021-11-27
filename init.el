@@ -11,14 +11,14 @@
 ;; Startup reduce
 (load "~/.emacs.d/lisp/performance/startup.el")
 ;; General emacs configs
-(load "~/.emacs.d/lisp/theme.el")
+(load "~/.emacs.d/lisp/appearance/theme.el")
+(load "~/.emacs.d/lisp/appearance/general.el")
 (load "~/.emacs.d/lisp/cleanup.el")
-(load "~/.emacs.d/lisp/appearance.el")
 (load "~/.emacs.d/lisp/hydra.el")
 (load "~/.emacs.d/lisp/helm.el")
 ;;(load "~/.emacs.d/lisp/ivy.el")
 (load "~/.emacs.d/lisp/git-init.el")
-(load "~/.emacs.d/lisp/general-init.el")
+(load "~/.emacs.d/lisp/misc.el")
 (load "~/.emacs.d/lisp/tramp-init.el")
 (load "~/.emacs.d/lisp/org.el")
 ;; Language support
@@ -42,7 +42,7 @@
 ;(load "~/.emacs.d/lisp/languages/erlang-init.el")
 (load "~/.emacs.d/lisp/languages/clojure-init.el")
 ;; Social
-(load "~/.emacs.d/lisp/irc.el")
-(load "~/.emacs.d/lisp/email.el")
+(load "~/.emacs.d/lisp/social/irc.el")
+(load "~/.emacs.d/lisp/social/email.el")
 ;; Runtime performance
 (load "~/.emacs.d/lisp/performance/runtime.el")
