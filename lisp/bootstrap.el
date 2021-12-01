@@ -50,6 +50,9 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 
+;; Prompt before killing emacs
+(setq confirm-kill-emacs 'y-or-n-p)
+
 ;; Path
 (when (equal "guix" system-name)
   (setq exec-path '("~/bin"
