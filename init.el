@@ -18,7 +18,7 @@
 (load "~/.emacs.d/lisp/hydra.el")
 (load "~/.emacs.d/lisp/helm.el")
 ;;(load "~/.emacs.d/lisp/ivy.el")
-(load "~/.emacs.d/lisp/git-init.el")
+(load "~/.emacs.d/lisp/git.el")
 (load "~/.emacs.d/lisp/misc.el")
 (load "~/.emacs.d/lisp/tramp.el")
 (load "~/.emacs.d/lisp/org.el")
