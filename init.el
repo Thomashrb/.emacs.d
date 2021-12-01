@@ -20,7 +20,7 @@
 ;;(load "~/.emacs.d/lisp/ivy.el")
 (load "~/.emacs.d/lisp/git-init.el")
 (load "~/.emacs.d/lisp/misc.el")
-(load "~/.emacs.d/lisp/tramp-init.el")
+(load "~/.emacs.d/lisp/tramp.el")
 (load "~/.emacs.d/lisp/org.el")
 ;; Language support
 (load "~/.emacs.d/lisp/languages/lsp/lsp-init.el")
