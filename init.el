@@ -6,15 +6,15 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file 'noerror)
 
-;; Bootstrap environment
-(load "~/.emacs.d/lisp/bootstrap.el")
+;; Bootstrap packages
+(load "~/.emacs.d/lisp/bootstrap/packages.el")
+(load "~/.emacs.d/lisp/bootstrap/settings.el")
+(load "~/.emacs.d/lisp/bootstrap/cleanup.el")
 ;; Startup reduce
 (load "~/.emacs.d/lisp/performance/startup.el")
 ;; General emacs configs
-(load "~/.emacs.d/lisp/settings.el")
 (load "~/.emacs.d/lisp/appearance/theme.el")
 (load "~/.emacs.d/lisp/appearance/general.el")
-(load "~/.emacs.d/lisp/cleanup.el")
 (load "~/.emacs.d/lisp/hydra.el")
 (load "~/.emacs.d/lisp/helm.el")
 ;;(load "~/.emacs.d/lisp/ivy.el")
