@@ -4,7 +4,9 @@
 ;; After bootstrapping use-package
 ;; all other general mode setup should go here
 ;;; Code:
-(use-package undo-tree)
+(use-package undo-tree
+  :init
+  (global-undo-tree-mode))
 (use-package smartparens
   :hook
   (prog-mode . smartparens-mode))
