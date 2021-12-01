@@ -11,6 +11,7 @@
 ;; Startup reduce
 (load "~/.emacs.d/lisp/performance/startup.el")
 ;; General emacs configs
+(load "~/.emacs.d/lisp/settings.el")
 (load "~/.emacs.d/lisp/appearance/theme.el")
 (load "~/.emacs.d/lisp/appearance/general.el")
 (load "~/.emacs.d/lisp/cleanup.el")
