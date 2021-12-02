@@ -14,7 +14,6 @@
   :after (helm-mode))
 
 (use-package helm-swoop
-  :after (helm-rg)
   :config
   (global-set-key (kbd "C-c s") 'helm-swoop)
   (global-set-key (kbd "C-c S") 'helm-multi-swoop-all)
@@ -45,5 +44,6 @@
   (global-set-key (kbd "C-c p r") 'helm-projectile-recentf))
 
 ;; list last ran commands first
-(use-package smex)
-(smex-initialize)
+(use-package smex
+  :init
+  (smex-initialize))
