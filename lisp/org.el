@@ -8,7 +8,8 @@
 ;;; Code:
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((shell . t)))
+ '((shell . t)
+   (awk . t)))
 
 
 (setq org-todo-keywords
