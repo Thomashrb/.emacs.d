@@ -10,13 +10,15 @@
   (global-set-key (kbd "M-y") 'helm-show-kill-ring)
   (global-set-key (kbd "C-c p j") 'helm-etags-select))
 
-(use-package helm-swoop
-  :config
-  (global-set-key (kbd "C-c s") 'helm-swoop)
-  (global-set-key (kbd "C-c S") 'helm-multi-swoop-all))
-
 (use-package helm-rg
   :after (helm-mode))
+
+(use-package helm-swoop
+  :after (helm-rg)
+  :config
+  (global-set-key (kbd "C-c s") 'helm-swoop)
+  (global-set-key (kbd "C-c S") 'helm-multi-swoop-all)
+  (global-set-key (kbd "C-c p s") 'helm-multi-swoop-projectile))
 
 (use-package helm-projectile
   :after (helm-rg)
@@ -36,7 +38,6 @@
   (projectile-discover-projects-in-search-path)
   (global-set-key (kbd "C-c p f") 'helm-projectile)
   (global-set-key (kbd "C-c p p") 'helm-projectile-switch-project)
-  (global-set-key (kbd "C-c p s") 'helm-projectile-rg)
   (global-set-key (kbd "C-c p b") 'helm-projectile-switch-to-buffer)
   (global-set-key (kbd "C-c p f") 'helm-projectile-find-file)
   (global-set-key (kbd "C-c p k") 'projectile-kill-buffers)
