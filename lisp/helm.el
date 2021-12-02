@@ -10,17 +10,16 @@
   (global-set-key (kbd "M-y") 'helm-show-kill-ring)
   (global-set-key (kbd "C-c p j") 'helm-etags-select))
 
-(use-package helm-rg
+(use-package helm-ag
   :after (helm-mode))
 
 (use-package helm-swoop
   :config
   (global-set-key (kbd "C-c s") 'helm-swoop)
-  (global-set-key (kbd "C-c S") 'helm-multi-swoop-all)
-  (global-set-key (kbd "C-c p s") 'helm-multi-swoop-projectile))
+  (global-set-key (kbd "C-c S") 'helm-multi-swoop-all))
 
 (use-package helm-projectile
-  :after (helm-rg)
+  :after (helm-ag)
   :init
   (setq projectile-project-search-path '("~/.emacs.d/"
                                          "~/development/beat"
@@ -41,6 +40,7 @@
   (global-set-key (kbd "C-c p f") 'helm-projectile-find-file)
   (global-set-key (kbd "C-c p k") 'projectile-kill-buffers)
   (global-set-key (kbd "C-c p p") 'helm-projectile-switch-project)
+  (global-set-key (kbd "C-c p s") 'helm-projectile-ag)
   (global-set-key (kbd "C-c p r") 'helm-projectile-recentf))
 
 ;; list last ran commands first
