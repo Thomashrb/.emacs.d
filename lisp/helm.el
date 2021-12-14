@@ -32,6 +32,8 @@
                                          "~/development/elixir"
                                          "~/development/bpftrace"
                                          "~/development/pony"
+                                         "~/development/scala"
+                                         "~/development/clojure"
                                          "~/git"))
   (projectile-discover-projects-in-search-path)
   (global-set-key (kbd "C-c p f") 'helm-projectile)
