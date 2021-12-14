@@ -6,11 +6,12 @@
 ;; #+MACRO: clientname Jane Doe
 ;; On export {{{clientname}}} will expand to Jane Doe.
 ;;; Code:
+(use-package ob-restclient) ; org-babel restclient
+
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((shell . t)
    (awk . t)))
-
 
 (setq org-todo-keywords
       '((sequence "TODO(t)" "|" "DONE(d)")

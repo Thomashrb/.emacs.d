@@ -7,6 +7,7 @@
 (use-package undo-tree
   :init
   (global-undo-tree-mode))
+
 (use-package smartparens
   :hook
   (prog-mode . smartparens-mode))
@@ -17,7 +18,6 @@
   (add-hook 'after-init-hook #'global-flycheck-mode))
 
 (use-package restclient)
-(use-package ob-restclient) ; org-babel restclient
 
 ;; Rainbowdelimiters - Visualy pair up delimiters
 (use-package rainbow-delimiters
@@ -48,7 +48,6 @@
   :hook (prog-mode . comment-tags-mode))
 
 (global-set-key (kbd "C-x B") 'ibuffer)
-
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 
