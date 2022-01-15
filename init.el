@@ -33,8 +33,8 @@
 (load "~/.emacs.d/lisp/languages/haskell-init.el")
 (load "~/.emacs.d/lisp/languages/lsp/rust-init.el")
 (load "~/.emacs.d/lisp/languages/pony-init.el")
+(load "~/.emacs.d/lisp/languages/lua-init.el")
 ;(load "~/.emacs.d/lisp/languages/nix-init.el")
-;(load "~/.emacs.d/lisp/languages/lua-init.el")
 ;(load "~/.emacs.d/lisp/languages/cl-init.el")
 ;(load "~/.emacs.d/lisp/languages/go-init.el")
 ;(load "~/.emacs.d/lisp/languages/bpftrace-init.el")
@@ -42,6 +42,7 @@
 ;(load "~/.emacs.d/lisp/languages/elm-init.el")
 ;(load "~/.emacs.d/lisp/languages/erlang-init.el")
 (load "~/.emacs.d/lisp/languages/clojure-init.el")
+(load "~/.emacs.d/lisp/languages/unison-init.el")
 ;; Social
 (load "~/.emacs.d/lisp/social/irc.el")
 (load "~/.emacs.d/lisp/social/email.el")
