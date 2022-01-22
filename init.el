@@ -34,7 +34,7 @@
 (load "~/.emacs.d/lisp/languages/php-init.el")
 (load "~/.emacs.d/lisp/languages/pony-init.el")
 (load "~/.emacs.d/lisp/languages/lua-init.el")
-;(load "~/.emacs.d/lisp/languages/nix-init.el")
+(load "~/.emacs.d/lisp/languages/nix-init.el")
 ;(load "~/.emacs.d/lisp/languages/cl-init.el")
 ;(load "~/.emacs.d/lisp/languages/go-init.el")
 ;(load "~/.emacs.d/lisp/languages/bpftrace-init.el")

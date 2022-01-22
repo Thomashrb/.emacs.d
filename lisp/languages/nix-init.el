@@ -1,5 +1,6 @@
 (use-package nix-mode
-  :defer t)
+  :defer t
+  :mode "\\.nix\\'")
 
 (use-package nixpkgs-fmt
   :defer t)
