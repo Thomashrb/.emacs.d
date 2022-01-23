@@ -59,7 +59,15 @@
         comment-tags-require-colon nil
         comment-tags-case-sensitive t
         comment-tags-show-faces nil)
-  :hook (prog-mode . comment-tags-mode))
+  :hook
+  (prog-mode . comment-tags-mode))
+
+;; INFO this requires direnv binary locally
+(use-package direnv
+  :init
+  (add-hook 'prog-mode-hook #'direnv-update-environment)
+  :config
+  (direnv-mode))
 
 (global-set-key (kbd "C-x B") 'ibuffer)
 (global-set-key (kbd "M-n") 'forward-paragraph)
