@@ -67,7 +67,8 @@
   :init
   (add-hook 'prog-mode-hook #'direnv-update-environment)
   :config
-  (direnv-mode))
+  (direnv-mode)
+  (add-to-list 'warning-suppress-types '(direnv)))
 
 (global-set-key (kbd "C-x B") 'ibuffer)
 (global-set-key (kbd "M-n") 'forward-paragraph)
