@@ -1,7 +1,6 @@
 ;; toggle-input-method
 (use-package dyalog-mode
   :config
-  (setq )
   :bind
   (:map dyalog-mode-map
         ("C-x j j" . dyalog-editor-connect)
