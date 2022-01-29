@@ -15,6 +15,7 @@
   (rust-mode . lsp)
   (lsp-mode . lsp-lens-mode)
   (sh-mode . lsp)
+  (julia-mode . lsp)
   :config
   (setq lsp-prefer-flymake nil)
   ;; https://emacs-lsp.github.io/lsp-mode/page/performance/
