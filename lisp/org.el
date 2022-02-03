@@ -11,24 +11,30 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((shell . t)
-   (awk . t)))
+   (awk . t)
+   (python . t)))
 
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "|" "DONE(d)")
-        (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
-        (sequence "|" "CANCELED(c)")))
+      '((sequence "TODO(t)" "|" "DONE(d)")))
 
-;; (make-directory "~/.org-jira")
+
+;;(make-directory "~/.org-jira")
 (use-package org-jira
   :config
   (setq jiralib-url "https://beattech.atlassian.net")
   (setq org-jira-custom-jqls
-        '(
-          (:jql "project = BP AND status = 'TO DO' AND labels = Content ORDER BY created DESC"
-                :filename "BP_content")
-          (:jql "project = BP AND sprint in openSprints () "
-                :filename "BP_SPRINT")
-          (:jql "project = BP AND labels = Content AND sprint in openSprints () "
-                :filename "BP_content_SPRINT")
-          )))
+        '((:jql "('Team[Team]' in (20,2)
+                 OR project = 'Beat Backend' AND labels = Content)
+                 and status in ('To Do')"
+                :filename "CONTENT_backlog")
+          (:jql "('Team[Team]' in (20,2)
+                 OR project = 'Beat Backend' AND labels = Content)
+                 and sprint in openSprints()"
+                :filename "CONTENT_sprint")
+          (:jql "('Team[Team]' in (20,2)
+                 OR project = 'Beat Backend' AND labels = Content)
+                 and assignee in (currentUser())
+                 and sprint in openSprints()"
+                :filename "CONTENT_me"))))
+
 ;;; org.el ends here
