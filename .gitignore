@@ -29,3 +29,5 @@ backups/*
 !backups/.gitkeep
 /mymodes/
 /straight/
+/org-roam.db
+/tokens/
