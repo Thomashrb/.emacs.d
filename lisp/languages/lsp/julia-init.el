@@ -21,6 +21,6 @@
   :bind
   (:map julia-mode-map
         ("C-x j j" . julia-repl)
-        ("C-c C-c c" . julia-repl-send-line)
-        ("C-c C-c C-c" . julia-repl-send-buffer))
+        ("C-M-x" . julia-repl-send-line)
+        ("C-c C-k" . julia-repl-send-buffer))
   :mode "\\.jl\\'")

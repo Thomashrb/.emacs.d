@@ -15,6 +15,6 @@
      (set-variable 'tab-width 2)))
   :bind
   (:map ponylang-mode-map
-        ("C-c C-v" . ponylang-project-build)
-        ("C-c C-c" . ponylang-project-run)
+        ("C-c C-l" . ponylang-project-build)
+        ("C-M-x" . ponylang-project-run)
         ("<C-tab>" . company-ctags)))
