@@ -73,5 +73,8 @@
 (global-set-key (kbd "C-x B") 'ibuffer)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-p") 'backward-paragraph)
+(add-hook 'emacs-lisp-mode-hook
+    (lambda ()
+        (define-key emacs-lisp-mode-map (kbd "C-c C-k") 'eval-buffer)))
 
 ;;; general-init.el ends here
