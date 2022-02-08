@@ -17,6 +17,5 @@
 (setq show-paren-style 'expression)
 
 ;; Font
-(set-frame-font "-CTDB-FiraCode Nerd Font-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1" nil t)
-(setq default-frame-alist '((font . "-CTDB-FiraCode Nerd Font-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1"))) ;;; set default font for emacs --daemon / emacsclient
-(set-face-attribute 'default nil :height 90)
+(set-frame-font "-CTDB-FiraCode Nerd Font-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1" nil t)
+(setq default-frame-alist '((font . "-CTDB-FiraCode Nerd Font-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1"))) ;;; set default font for emacs --daemon / emacsclient
