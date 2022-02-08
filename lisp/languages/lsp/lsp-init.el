@@ -23,6 +23,36 @@
   (setq lsp-idle-delay 0.500)
   (setq lsp-log-io nil)                        ;; logging off for performance
   (setq lsp-completion-provider :capf)         ;; company-capf
+  ; LSP will watch all files in the project
+  ; directory by default, so we eliminate some
+  ; of the irrelevant ones here, most notable
+  ; the .direnv folder which will contain *a lot*
+  ; of Nix-y noise we don't want indexed.
+  (setq lsp-file-watch-ignored '(
+    "[/\\\\]\\.direnv$"
+    ; SCM tools
+    "[/\\\\]\\.git$"
+    "[/\\\\]\\.hg$"
+    "[/\\\\]\\.bzr$"
+    "[/\\\\]_darcs$"
+    "[/\\\\]\\.svn$"
+    "[/\\\\]_FOSSIL_$"
+    ; IDE tools
+    "[/\\\\]\\.idea$"
+    "[/\\\\]\\.ensime_cache$"
+    "[/\\\\]\\.eunit$"
+    "[/\\\\]node_modules$"
+    "[/\\\\]\\.fslckout$"
+    "[/\\\\]\\.tox$"
+    "[/\\\\]\\.stack-work$"
+    "[/\\\\]\\.bloop$"
+    "[/\\\\]\\.metals$"
+    "[/\\\\]target$"
+    ; Autotools output
+    "[/\\\\]\\.deps$"
+    "[/\\\\]build-aux$"
+    "[/\\\\]autom4te.cache$"
+    "[/\\\\]\\.reference$"))
   :bind
   (:map lsp-mode-map
         ("C-c C-f" . lsp-format-buffer)
