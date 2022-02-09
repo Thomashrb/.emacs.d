@@ -15,6 +15,7 @@
   (rust-mode . lsp)
   (lsp-mode . lsp-lens-mode)
   (julia-mode . lsp)
+  (haskell-mode . lsp-deferred) ;; deferred waits for direnv
   :config
   (setq lsp-prefer-flymake nil)
   ;; https://emacs-lsp.github.io/lsp-mode/page/performance/
