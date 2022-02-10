@@ -6,7 +6,7 @@
   (setq ivy-use-virtual-buffers t)
   (setq enable-recursive-minibuffers t)
   ;; number of result lines to display
-  (setq ivy-height 30)
+  (setq ivy-height 40)
   ;; does not count candidates
   (setq ivy-count-format "")
   ;; no regexp by default
@@ -14,7 +14,9 @@
   ;; configure regexp engine.
   (setq ivy-re-builders-alist
         ;; allow input not in order
-        '((t   . ivy--regex-ignore-order))))
+        '((t . ivy--regex-ignore-order))))
+
+(use-package wgrep)
 
 (use-package counsel-projectile
   :after ivy)
@@ -35,9 +37,10 @@
   (global-set-key (kbd "C-h u") 'counsel-unicode-char)
   (global-set-key (kbd "C-c g") 'counsel-git-grep)
   (global-set-key (kbd "C-x b") 'counsel-switch-buffer)
-  (global-set-key (kbd "C-c k") 'counsel-ag)
-  (global-set-key (kbd "C-c p") 'counsel-projectile-find-file)
-  (global-set-key (kbd "C-c P") 'counsel-projectile-switch-project)
+  (global-set-key (kbd "C-c p f") 'counsel-projectile-find-file)
+  (global-set-key (kbd "C-c p p") 'counsel-projectile-switch-project)
+  (global-set-key (kbd "C-c p s") 'counsel-projectile-rg)
+  (global-set-key (kbd "C-c p b") 'counsel-projectile-switch-to-buffer)
   ;; After counsel has loaded we also need to set to re-set the ~ivy-height-list~.
   (setq ivy-height-alist '((t
                             lambda (_caller)
@@ -51,4 +54,4 @@
   :defer t
   :config
   (global-set-key (kbd "C-c s") 'swiper)
-  (global-set-key (kbd "C-c S") 'swiper-all))
+  (global-set-key (kbd "C-c S") 'swiper-thing-at-point))
