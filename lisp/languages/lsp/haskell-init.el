@@ -1,5 +1,3 @@
-(use-package haskell-mode
-  :defer t)
+(use-package lsp-haskell)
 
-(use-package lsp-haskell
-  :defer t)
+(use-package haskell-mode)
