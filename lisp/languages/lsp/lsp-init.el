@@ -10,12 +10,13 @@
   :straight (lsp-mode :source melpa)
   :after (company)
   :hook
-  (scala-mode . lsp)
-  (elixir-mode . lsp)
-  (rust-mode . lsp)
   (lsp-mode . lsp-lens-mode)
-  (julia-mode . lsp)
-  (haskell-mode . lsp-deferred) ;; deferred waits for direnv
+  (scala-mode . lsp-deferred)
+  (elixir-mode . lsp-deferred)
+  (rust-mode . lsp-deferred)
+  (julia-mode . lsp-deferred)
+  (haskell-mode . lsp-deferred)
+  (zig-mode . lsp-deferred)
   :config
   (setq lsp-prefer-flymake nil)
   ;; https://emacs-lsp.github.io/lsp-mode/page/performance/

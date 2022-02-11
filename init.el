@@ -30,6 +30,7 @@
 (load "~/.emacs.d/lisp/languages/lsp/haskell-init.el")
 (load "~/.emacs.d/lisp/languages/lsp/rust-init.el")
 (load "~/.emacs.d/lisp/languages/lsp/julia-init.el")
+(load "~/.emacs.d/lisp/languages/lsp/zig-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 (load "~/.emacs.d/lisp/languages/python-init.el")
 (load "~/.emacs.d/lisp/languages/config-init.el")
