@@ -1,5 +1,4 @@
-(use-package rust-mode)
-
-;; Add keybindings for interacting with Cargo
-(use-package cargo
-  :hook (rust-mode . cargo-minor-mode))
+(use-package rustic
+  :bind (:map rustic-mode-map
+              ("C-c C-k" . rustic-cargo-run)
+              ("C-c C-t" . rustic-cargo-test)))
