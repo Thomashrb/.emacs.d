@@ -2,7 +2,12 @@
 ;;; Commentary:
 ;;; Handle configuration languages
 ;;; Code:
+(use-package ansible)
+
 (use-package yaml-mode
+  :after ansible
+  :config
+  (add-hook 'yaml-mode-hook '(lambda () (ansible 1)))
   :mode
   (("\\.yml\\'" . yaml-mode)
   (("\\.yaml\\'" . yaml-mode))))
@@ -13,10 +18,8 @@
     (eval-after-load 'flycheck
       '(add-hook 'flycheck-mode-hook 'flycheck-yamllint-setup))))
 
-(use-package ansible)
-
 (use-package toml-mode
-  :mode (("\\.toml\\'" . yaml-mode)))
+  :mode (("\\.toml\\'" . toml-mode)))
 
 (use-package json-reformat)
 
