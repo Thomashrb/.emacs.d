@@ -16,6 +16,7 @@
   (rust-mode . lsp-deferred)
   (julia-mode . lsp-deferred)
   (haskell-mode . lsp-deferred)
+  (c-mode . lsp-deferred)
   (zig-mode . lsp-deferred)
   :config
   (setq lsp-prefer-flymake nil)

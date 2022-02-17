@@ -1,8 +1,3 @@
-(defun zig-build-run ()
-  "Execute zig build run."
-  (interactive)
-  (zig--run-cmd "build run" nil))
-
 (use-package zig-mode
   :config
   (setq zig-format-on-save nil)
@@ -13,3 +8,8 @@
         ("C-c C-k" . zig-run)
         ("C-c C-C" . zig-compile)
         ("C-c C-t" . zig-test-buffer)))
+
+(defun zig-build-run ()
+  "Execute zig build run."
+  (interactive)
+  (zig--run-cmd "build run" nil))
