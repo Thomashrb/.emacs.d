@@ -31,3 +31,4 @@ backups/*
 /straight/
 /org-roam.db
 /tokens/
+/history

@@ -70,6 +70,9 @@
   (direnv-mode)
   (add-to-list 'warning-suppress-types '(direnv)))
 
+(setq savehist-length 25)
+(savehist-mode 1)
+
 (global-set-key (kbd "C-x B") 'ibuffer)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-p") 'backward-paragraph)

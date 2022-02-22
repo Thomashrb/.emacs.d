@@ -8,7 +8,7 @@
   ;; number of result lines to display
   (setq ivy-height 40)
   ;; does not count candidates
-  (setq ivy-count-format "")
+  (setq ivy-count-format "%d/%d")
   ;; no regexp by default
   (setq ivy-initial-inputs-alist nil)
   ;; configure regexp engine.
@@ -36,7 +36,7 @@
   (global-set-key (kbd "C-h i") 'counsel-info-lookup-symbol)
   (global-set-key (kbd "C-h u") 'counsel-unicode-char)
   (global-set-key (kbd "C-c g") 'counsel-git-grep)
-  (global-set-key (kbd "C-x b") 'counsel-switch-buffer)
+  (global-set-key (kbd "C-x b") 'counsel-buffer-or-recentf)
   (global-set-key (kbd "C-c p f") 'counsel-projectile-find-file)
   (global-set-key (kbd "C-c p p") 'counsel-projectile-switch-project)
   (global-set-key (kbd "C-c p s") 'counsel-projectile-rg)
@@ -45,9 +45,6 @@
   (setq ivy-height-alist '((t
                             lambda (_caller)
                             (/ (frame-height) 3)))))
-
-;; list last ran commands first
-(use-package smex)
 
 ;; Swiper - nicer searches
 (use-package swiper
