@@ -20,7 +20,7 @@
       '((sequence "TODO(t)" "|" "DONE(d)")))
 
 ;;(make-directory "~/.org-jira")
-(load "~/.emacs.d/tokens/jira.el" )
+(load "~/.emacs.d/request/jira.el" )
 (use-package org-jira
   :config
   (setq jiralib-url "https://beattech.atlassian.net")

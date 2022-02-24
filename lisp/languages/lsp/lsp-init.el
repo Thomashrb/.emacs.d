@@ -58,6 +58,7 @@
     "[/\\\\]\\.reference$"))
   :bind
   (:map lsp-mode-map
+        ("C-c C-r" . lsp-rename)
         ("C-c C-f" . lsp-format-buffer)
         ("C-c C-o" . lsp-organize-imports)))
 
