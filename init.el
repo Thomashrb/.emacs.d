@@ -49,6 +49,8 @@
 ;; (load "~/.emacs.d/lisp/languages/erlang-init.el")
 ;; (load "~/.emacs.d/lisp/languages/clojure-init.el")
 ;; (load "~/.emacs.d/lisp/languages/unison-init.el")
+;; Challenges
+;;(load "~/.emacs.d/lisp/challenges/adventofcode.el")
 ;; Social
 (load "~/.emacs.d/lisp/social/irc.el")
 (load "~/.emacs.d/lisp/social/email.el")
