@@ -62,6 +62,12 @@
   :hook
   (prog-mode . comment-tags-mode))
 
+(use-package which-key
+  :init (which-key-mode)
+  :diminish which-key-mode
+  :config
+  (setq which-key-idle-delay 0.3))
+
 ;; INFO this requires direnv binary locally
 (use-package direnv
   :init

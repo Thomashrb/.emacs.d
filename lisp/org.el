@@ -6,7 +6,18 @@
 ;; #+MACRO: clientname Jane Doe
 ;; On export {{{clientname}}} will expand to Jane Doe.
 ;;; Code:
-(use-package org)
+(use-package org
+  :bind (("C-c o o t" . org-timer-start)
+         ("C-c o o s" . org-timer-stop)
+         ("C-c o o r" . org-timer-set-timer)
+         ("C-c o o p" . org-timer)
+         ("C-c o o o" . org-clock-out)
+         ("C-c o o j" . org-clock-goto)
+         ("C-c o o c" . org-capture)
+         ("C-c o o l" . org-capture-goto-last-stored)
+         ("C-c o o n" . org-next-link)
+         ("C-c o o p" . org-previous-link)
+         ("C-c o o O" . org-open-at-point)))
 
 (use-package ob-restclient) ; org-babel restclient
 
@@ -37,7 +48,13 @@
                  OR project = 'Beat Backend' AND labels = Content)
                  and assignee in (currentUser())
                  and sprint in openSprints()"
-                :filename "CONTENT_me"))))
+                :filename "CONTENT_me")))
+  :bind (("C-c o j j j" . org-jira-get-issues-from-custom-jql)
+         ("C-c o j j i" . org-jira-get-issues)
+         ("C-c o j j r" . org-jira-refresh-issue)
+         ("C-c o j j R" . org-jira-refresh-issues-in-buffer)
+         ("C-c o j j p" . org-jira-progress-issue)
+         ("C-c o j j c" . org-jira-add-comment)))
 
 (use-package org-roam
   :custom
