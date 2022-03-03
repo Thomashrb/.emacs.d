@@ -73,8 +73,7 @@
   :init
   (add-hook 'prog-mode-hook #'direnv-update-environment)
   :config
-  (direnv-mode)
-  (add-to-list 'warning-suppress-types '(direnv)))
+  (direnv-mode))
 
 (setq savehist-length 25)
 (savehist-mode 1)

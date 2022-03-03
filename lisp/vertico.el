@@ -3,13 +3,8 @@
   :init
   (vertico-mode)
   (setq vertico-count 25)
-
   ;; Grow and shrink the Vertico minibuffer
-  (setq vertico-resize nil)
-
-  ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
-  ;; (setq vertico-cycle t)
-  )
+  (setq vertico-resize nil))
 
 (use-package consult
   :bind (("C-c h" . consult-history)
@@ -65,6 +60,21 @@
   ("C-c p" . 'projectile-command-map))
 
 (use-package wgrep)
+
+(use-package embark
+  :bind
+  (("C-." . embark-act)
+   ("C-;" . embark-dwim)        ;; good alternative: M-.
+   ("C-h B" . embark-bindings)) ;; alternative for `describe-bindings'
+  :config
+  ;; Hide the mode line of the Embark live/completions buffers
+  (add-to-list 'display-buffer-alist
+               '("\\`\\*Embark Collect \\(Live\\|Completions\\)\\*"
+                 nil
+                 (window-parameters (mode-line-format . none)))))
+
+(use-package embark-consult
+  :after (embark consult))
 
 (use-package orderless
   :init
