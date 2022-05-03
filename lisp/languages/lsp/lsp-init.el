@@ -11,7 +11,7 @@
   :after (company)
   :hook
   (lsp-mode . lsp-lens-mode)
-  (scala-mode . lsp-deferred)
+  (scala-mode . lsp)
   (elixir-mode . lsp-deferred)
   (rust-mode . lsp-deferred)
   (julia-mode . lsp-deferred)
@@ -19,6 +19,8 @@
   (c-mode . lsp-deferred)
   (zig-mode . lsp-deferred)
   :config
+  ;; https://github.com/emacs-lsp/lsp-mode/blob/fbfaa80095a82f7473cb7e45fe73b32ecc1900ae/lsp-mode.el#L7328
+  (setq lsp-verify-signature nil)
   (setq lsp-prefer-flymake nil)
   ;; https://emacs-lsp.github.io/lsp-mode/page/performance/
   (setq gc-cons-threshold 100000000)           ;; 100mb
