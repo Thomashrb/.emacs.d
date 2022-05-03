@@ -7,6 +7,8 @@
 (use-package undo-tree
   :init
   (global-undo-tree-mode))
+;; Prevent undo tree files from polluting your git repo
+(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 
 (use-package smartparens
   :hook
