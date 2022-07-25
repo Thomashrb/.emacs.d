@@ -17,5 +17,5 @@
 (setq show-paren-style 'expression)
 
 ;; Font
-(set-frame-font "-PfEd-Terminus (TTF)-normal-normal-normal-*-16-*-*-*-m-0-fontset-auto1" nil t)
-(setq default-frame-alist '((font . "-PfEd-Terminus (TTF)-normal-normal-normal-*-16-*-*-*-m-0-fontset-auto1"))) ;;; set default font for emacs --daemon / emacsclient
+(set-frame-font "-PfEd-Terminus (TTF)-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1" nil t)
+(setq default-frame-alist '((font . "-PfEd-Terminus (TTF)-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1"))) ;;; set default font for emacs --daemon / emacsclient
