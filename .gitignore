@@ -34,3 +34,4 @@ backups/*
 /history
 /projects
 /undo/
+/eln-cache/
