@@ -7,6 +7,7 @@
 ;; https://github.com/emacs-lsp/lsp-mode/issues/2179
 ;; so we use melpa for this
 (use-package lsp-mode
+  :straight (lsp-mode :source melpa)
   :after (company)
   :hook
   (lsp-mode . lsp-lens-mode)
@@ -76,6 +77,7 @@
 (use-package treemacs)
 (use-package treemacs-projectile)
 (use-package lsp-treemacs
+  :straight (lsp-treemacs :build (:not compile))
   :config
   (lsp-treemacs-sync-mode 1)
   (global-set-key (kbd "C-x e") 'lsp-treemacs-errors-list))

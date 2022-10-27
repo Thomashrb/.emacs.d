@@ -12,7 +12,9 @@
   :mode "\\.s\\(cala\\|bt\\)$")
 
 (use-package lsp-metals
-  :straight (lsp-metals :type git :host github :repo "emacs-lsp/lsp-metals")
+  :straight (lsp-metals
+             :build (:not compile)
+             :type git :host github :pin "097d6021a4ff0eae704cc3074e064c9509c5cafc" :repo "emacs-lsp/lsp-metals")
   :custom
   ;; Metals claims to support range formatting by default but it supports range
   ;; formatting of multiline strings only. Disable it
