@@ -25,7 +25,7 @@
 (load "~/.emacs.d/lisp/misc.el")
 (load "~/.emacs.d/lisp/tramp.el")
 ;; Language support
-(load "~/.emacs.d/lisp/languages/lsp/lsp-init.el")
+(load "~/.emacs.d/lisp/languages/lsp/lspmode-init.el")
 (load "~/.emacs.d/lisp/languages/lsp/scala-init.el")
 (load "~/.emacs.d/lisp/languages/lsp/elixir-init.el")
 (load "~/.emacs.d/lisp/languages/lsp/haskell-init.el")

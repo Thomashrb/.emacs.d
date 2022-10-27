@@ -7,7 +7,7 @@
 ;; https://github.com/emacs-lsp/lsp-mode/issues/2179
 ;; so we use melpa for this
 (use-package lsp-mode
-  :straight (lsp-mode :source melpa)
+;;  :straight (lsp-mode :source melpa)
   :after (company)
   :hook
   (lsp-mode . lsp-lens-mode)
