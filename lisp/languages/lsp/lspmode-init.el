@@ -74,10 +74,11 @@
 
 ;; Enable tree-view for lsp
 (use-package all-the-icons)
+;; https://github.com/emacs-lsp/lsp-metals/issues/84
+;; use commit 76807be
 (use-package treemacs)
 (use-package treemacs-projectile)
 (use-package lsp-treemacs
-  :straight (lsp-treemacs :build (:not compile))
   :config
   (lsp-treemacs-sync-mode 1)
   (global-set-key (kbd "C-x e") 'lsp-treemacs-errors-list))
