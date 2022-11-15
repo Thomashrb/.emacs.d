@@ -7,6 +7,15 @@
 (use-package undo-tree
   :init
   (global-undo-tree-mode))
+
+;; Use evil but enable emacs kbs when inserting
+(use-package evil
+  :custom
+  (evil-disable-insert-state-bindings t)
+  :config
+  (evil-mode 1)
+  (evil-set-undo-system 'undo-tree))
+
 ;; Prevent undo tree files from polluting your git repo
 (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 

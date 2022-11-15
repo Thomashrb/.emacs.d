@@ -19,5 +19,14 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
-(use-package nyan-mode
-  :init (nyan-mode t))
+(use-package spaceline
+  :init
+  (spaceline-spacemacs-theme)
+  :config
+  (setq spaceline-highlight-face-func 'spaceline-highlight-face-evil-state)
+  (set-face-attribute 'spaceline-evil-emacs nil :background "#be84ff")
+  (set-face-attribute 'spaceline-evil-insert nil :background "#5fd7ff")
+  (set-face-attribute 'spaceline-evil-motion nil :background "#ae81ff")
+  (set-face-attribute 'spaceline-evil-normal nil :background "#a6e22e")
+  (set-face-attribute 'spaceline-evil-replace nil :background "#f92672")
+  (set-face-attribute 'spaceline-evil-visual nil :background "#fd971f"))
