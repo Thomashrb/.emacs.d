@@ -12,16 +12,8 @@
   (("\\.yml\\'" . yaml-mode)
   (("\\.yaml\\'" . yaml-mode))))
 
-(use-package flycheck-yamllint
-  :init
-  (progn
-    (eval-after-load 'flycheck
-      '(add-hook 'flycheck-mode-hook 'flycheck-yamllint-setup))))
-
 (use-package toml-mode
   :mode (("\\.toml\\'" . toml-mode)))
-
-(use-package json-reformat)
 
 (use-package json-mode
   :after json-reformat

@@ -8,14 +8,6 @@
   :init
   (global-undo-tree-mode))
 
-;; Use evil but enable emacs kbs when inserting
-(use-package evil
-  :custom
-  (evil-disable-insert-state-bindings t)
-  :config
-  (evil-mode 1)
-  (evil-set-undo-system 'undo-tree))
-
 ;; Prevent undo tree files from polluting your git repo
 (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 
@@ -78,13 +70,6 @@
   :diminish which-key-mode
   :config
   (setq which-key-idle-delay 0.3))
-
-;; INFO this requires direnv binary locally
-(use-package direnv
-  :init
-  (add-hook 'prog-mode-hook #'direnv-update-environment)
-  :config
-  (direnv-mode))
 
 (setq savehist-length 25)
 (savehist-mode 1)

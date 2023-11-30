@@ -61,6 +61,10 @@
 
 (use-package wgrep)
 
+(use-package ag)
+
+(use-package rg)
+
 (use-package embark
   :bind
   (("C-." . embark-act)

@@ -1,5 +1,4 @@
 ;;; cc-init.el --- .. -*- lexical-binding: t -*-
-;; Package-Requires: (ccls)
 ;;; Commentary:
 ;;; Code:
 
@@ -20,7 +19,7 @@
 
 (use-package cmake-mode)
 
-(use-package ccls
+(use-package c-mode
   :bind
   (:map c-mode-map
         ("C-c C-k" . make-run)

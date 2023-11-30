@@ -11,12 +11,6 @@
   ("scala" . scala-mode)
   :mode "\\.s\\(cala\\|bt\\)$")
 
-;; (use-package eglot
-;;   :pin melpa-stable
-;;   :config
-;;   (add-to-list 'eglot-server-programs '(scala-mode . ("metals-emacs")))
-;;   :hook (scala-mode . eglot-ensure))
-
 (use-package lsp-metals
   :straight (lsp-metals :type git :host github :repo "emacs-lsp/lsp-metals")
   :custom
