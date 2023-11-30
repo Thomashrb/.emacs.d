@@ -1,4 +1,6 @@
 ;; Melpa repo
+;; https://github.com/radian-software/straight.el
+;; Users of Emacs versions >= 27 will want to add:
 (setq package-enable-at-startup nil)
 (setq package-archives
       '(("gnu"          . "http://elpa.gnu.org/packages/")

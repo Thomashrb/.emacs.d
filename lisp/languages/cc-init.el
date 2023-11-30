@@ -19,7 +19,7 @@
 
 (use-package cmake-mode)
 
-(use-package c-mode
+(use-package cc-mode
   :bind
   (:map c-mode-map
         ("C-c C-k" . make-run)

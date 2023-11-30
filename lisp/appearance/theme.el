@@ -2,8 +2,8 @@
 ;; Theme                       ;;
 ;;-----------------------------;;
 
-(use-package spacemacs-common
-  :straight spacemacs-theme
+(use-package spacemacs-theme
+  :ensure t
   :init
   (load-theme 'spacemacs-dark t)
   (setq spacemacs-theme-org-agenda-height nil)

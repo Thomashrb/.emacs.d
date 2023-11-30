@@ -30,7 +30,7 @@
 ;; (load "~/.emacs.d/lisp/languages/lua-init.el")
 ;; (load "~/.emacs.d/lisp/languages/php-init.el")
 ;; (load "~/.emacs.d/lisp/languages/pony-init.el")
-;; (load "~/.emacs.d/lisp/languages/go-init.el")
+(load "~/.emacs.d/lisp/languages/go-init.el")
 ;; Social
 (load "~/.emacs.d/lisp/social/irc.el")
 ;; (load "~/.emacs.d/lisp/social/email.el")
