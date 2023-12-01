@@ -1,3 +1,7 @@
+;;; zig.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 (use-package zig-mode
   :config
   (setq zig-format-on-save nil)
@@ -17,3 +21,5 @@
   "Execute zig build run."
   (interactive)
   (zig--run-cmd "build test" nil))
+
+;;; zig.el ends here

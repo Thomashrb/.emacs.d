@@ -1,3 +1,7 @@
+;;; startup.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 ;; Stolen from doom emacs
 
 ;; GARBAGE COLLECTION
@@ -30,3 +34,5 @@
 ;; prevent the use of stale byte-code. Otherwise, it saves us a little IO time
 ;; to skip the mtime checks on every *.elc file.
 (setq load-prefer-newer noninteractive)
+
+;;; startup.el ends here

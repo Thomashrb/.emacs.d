@@ -1,5 +1,4 @@
-;;; general-init --- Summary
-;; A set of common packages
+;;; misc.el --- .. -*- lexical-binding: t -*-
 ;;; Commentary:
 ;; After bootstrapping use-package
 ;; all other general mode setup should go here
@@ -81,4 +80,4 @@
     (lambda ()
         (define-key emacs-lisp-mode-map (kbd "C-c C-k") 'eval-buffer)))
 
-;;; general-init.el ends here
+;;; misc.el ends here

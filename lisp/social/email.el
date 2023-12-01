@@ -37,4 +37,4 @@
     (:name "drafts" :sort-order newest-first :search-type 'tree :query "tag:draft" :key ,(kbd "D"))
     (:name "spam" :sort-order newest-first :search-type 'tree :query "tag:spam" :key ,(kbd "s"))
     (:name "all mail" :sort-order newest-first :search-type 'tree :query "*" :key ,(kbd "a")))))
-;;; email-init.el ends here
+;;; email.el ends here

@@ -1,5 +1,4 @@
-;;; Metals --- summary
-;; install metals
+;;; scala-init.el --- .. -*- lexical-binding: t -*-
 ;;; Commentary:
 ;; https://scalameta.org/metals/docs/editors/emacs.html
 ;; Enable scala-mode and sbt-mode

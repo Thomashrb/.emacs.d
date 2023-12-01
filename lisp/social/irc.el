@@ -1,3 +1,7 @@
+;;; irc.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 ;;; ERC Config - https://www.gnu.org/software/emacs/manual/html_node/erc/Sample-Configuration.html
 ;; Load authentication info from an external source.  Put sensitive
 ;; passwords and the like in here.
@@ -32,3 +36,5 @@
 ;; (setq erc-kill-queries-on-quit t)
 ;; Kill buffers for server messages after quitting the server
 ;; (setq erc-kill-server-buffer-on-quit t)
+
+;;; irc.el ends here

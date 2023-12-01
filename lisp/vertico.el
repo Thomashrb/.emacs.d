@@ -1,3 +1,7 @@
+;;; vertico.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 ;; Enable vertico
 (use-package vertico
   :init
@@ -94,3 +98,5 @@
   :after vertico
   :init
   (marginalia-mode))
+
+;;; vertico.el ends here

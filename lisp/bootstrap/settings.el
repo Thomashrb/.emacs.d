@@ -1,3 +1,7 @@
+;;; settings.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 ;; enable company golbaly
 (add-hook 'after-init-hook 'global-company-mode)
 
@@ -36,3 +40,5 @@
                   "/run/current-system/profile/bin"
                   "/run/current-system/profile/sbin"
                   "~/dotfiles/emacs/")))
+
+;;; settings.el ends here

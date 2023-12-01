@@ -1,3 +1,7 @@
+;;; pony-init.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 (use-package flycheck-pony
   :config
   (setq create-lockfiles nil))
@@ -18,3 +22,5 @@
         ("C-c C-l" . ponylang-project-build)
         ("C-M-x" . ponylang-project-run)
         ("<C-tab>" . company-ctags)))
+
+;;; pony-init.el ends here

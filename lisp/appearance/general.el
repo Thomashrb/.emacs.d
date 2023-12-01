@@ -1,3 +1,7 @@
+;;; general.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 ;; Basic
 (setq inhibit-splash-screen t
       inhibit-startup-message t
@@ -19,3 +23,5 @@
 ;; Font
 (set-frame-font "-PfEd-Terminus (TTF)-normal-normal-normal-*-18-*-*-*-m-0-iso10646-1" nil t)
 (setq default-frame-alist '((font . "-PfEd-Terminus (TTF)-normal-normal-normal-*-18-*-*-*-m-0-iso10646-1"))) ;;; set default font for emacs --daemon / emacsclient
+
+;;; general.el ends here

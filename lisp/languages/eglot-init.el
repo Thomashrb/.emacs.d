@@ -1,3 +1,7 @@
+;;; eglot-init.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 (use-package eglot
   :config
   (add-to-list 'eglot-server-programs '(scala-mode . ("metals-emacs")))
@@ -9,3 +13,5 @@
 
 ;; ex golang crashes with eglot (flymake?) without updated version of jsonrpc
 (use-package jsonrpc)
+
+;;; eglot-init.el ends here

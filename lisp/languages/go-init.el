@@ -1,3 +1,7 @@
+;;; go-init.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 (use-package go-mode
   :defer t
   :mode ("\\.go\\'" . go-mode))
@@ -17,3 +21,5 @@
 (defun eglot-format-buffer-on-save ()
   (add-hook 'before-save-hook #'eglot-format-buffer -10 t))
 (add-hook 'go-mode-hook #'eglot-format-buffer-on-save)
+
+;;; go-init.el ends here

@@ -1,3 +1,7 @@
+;;; cleanup.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 ;; Make backupdir and dont litter withbackupfiles
 (defvar backup-dir "~/.emacs.d/backups/")
 ;; safer way to backup
@@ -12,3 +16,5 @@
 
 ;; turn off backups
 ;(setq make-backup-files nil)
+
+;;; cleanup.el ends here

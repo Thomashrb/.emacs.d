@@ -1,3 +1,7 @@
+;;; packages.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 ;; Melpa repo
 ;; https://github.com/radian-software/straight.el
 ;; Users of Emacs versions >= 27 will want to add:
@@ -26,3 +30,5 @@
 
 ;; Always set `:straight t`
 (setq straight-use-package-by-default t)
+
+;;; packages.el ends here
