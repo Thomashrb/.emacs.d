@@ -1,6 +1,6 @@
-;; =============================================================== ;;
-;;                Load configurations and packages                 ;;
-;; =============================================================== ;;
+;;; init.el --- .. -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
 
 ;; Don't litter my init file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -26,7 +26,7 @@
 (load "~/.emacs.d/lisp/languages/zig-init.el")
 (load "~/.emacs.d/lisp/languages/cc-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
-;; (load "~/.emacs.d/lisp/languages/config-init.el")
+(load "~/.emacs.d/lisp/languages/config-init.el")
 ;; (load "~/.emacs.d/lisp/languages/lua-init.el")
 ;; (load "~/.emacs.d/lisp/languages/php-init.el")
 ;; (load "~/.emacs.d/lisp/languages/pony-init.el")
@@ -37,3 +37,5 @@
 ;; Runtime performance
 (load "~/.emacs.d/lisp/performance/runtime.el")
 ;; workaround
+
+;;; init.el ends here

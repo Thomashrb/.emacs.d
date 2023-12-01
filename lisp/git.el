@@ -1,3 +1,8 @@
+;;; git.el --- summary -*- lexical-binding: t -*-
+;;; Commentary:
+;; commentary
+;;; Code:
+
 ;; Sidebar with gitmarkers
 (use-package git-gutter)
 
@@ -32,7 +37,7 @@
   (global-set-key (kbd "C-c v /") 'magit-dispatch)
   (global-set-key (kbd "C-c v .") 'magit-file-dispatch)
   (global-set-key (kbd "C-c v b") 'magit-branch-checkout)
-  (global-set-key (kbd "C-c v g") 'magit-status)
+  (global-set-key (kbd "C-c v v") 'magit-status)
   (global-set-key (kbd "C-c v G") 'magit-status-here)
   (global-set-key (kbd "C-c v D") 'magit-file-delete)
   (global-set-key (kbd "C-c v B") 'magit-blame-addition)
@@ -47,3 +52,5 @@
 (use-package keychain-environment
   :init
   (keychain-refresh-environment))
+
+;;; git.el ends here

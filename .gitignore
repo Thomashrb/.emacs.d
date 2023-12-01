@@ -35,3 +35,4 @@ backups/*
 /projects
 /undo/
 /eln-cache/
+*.elc

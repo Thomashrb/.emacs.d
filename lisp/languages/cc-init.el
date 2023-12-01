@@ -10,7 +10,7 @@
 (defun make-compile ()
   "Execute zig build run."
   (interactive)
-  (compile "make test"))
+  (compile "make"))
 
 (defun make-test ()
   "Execute zig build run."
@@ -22,8 +22,8 @@
 (use-package cc-mode
   :bind
   (:map c-mode-map
-        ("C-c C-k" . make-run)
-        ("C-c C-C" . make-compile)
+        ("C-c C-k" . make-compile)
+        ("C-c C-K" . make-run)
         ("C-c C-t" . make-test)))
 
 
