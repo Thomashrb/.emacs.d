@@ -24,6 +24,7 @@
 (load "~/.emacs.d/lisp/languages/eglot-init.el")
 (load "~/.emacs.d/lisp/languages/scala-init.el")
 (load "~/.emacs.d/lisp/languages/zig-init.el")
+(load "~/.emacs.d/lisp/languages/rust-init.el")
 (load "~/.emacs.d/lisp/languages/cc-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 (load "~/.emacs.d/lisp/languages/config-init.el")

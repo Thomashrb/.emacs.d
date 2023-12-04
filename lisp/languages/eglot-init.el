@@ -14,4 +14,8 @@
 ;; ex golang crashes with eglot (flymake?) without updated version of jsonrpc
 (use-package jsonrpc)
 
+(use-package eldoc)
+
+(use-package dap-mode)
+
 ;;; eglot-init.el ends here
