@@ -5,6 +5,7 @@
 (use-package eglot
   :config
   (add-to-list 'eglot-server-programs '(scala-mode . ("metals-emacs")))
+  (add-to-list 'eglot-server-programs '(odin-mode . ("ols")))
   :bind
   (:map eglot-mode-map
       ("C-c C-r" . eglot-rename)

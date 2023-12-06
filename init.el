@@ -28,6 +28,7 @@
 (load "~/.emacs.d/lisp/languages/cc-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 (load "~/.emacs.d/lisp/languages/config-init.el")
+(load "~/.emacs.d/lisp/languages/odin-init.el")
 ;; (load "~/.emacs.d/lisp/languages/lua-init.el")
 ;; (load "~/.emacs.d/lisp/languages/php-init.el")
 ;; (load "~/.emacs.d/lisp/languages/pony-init.el")
