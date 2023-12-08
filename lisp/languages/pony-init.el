@@ -20,7 +20,6 @@
   :bind
   (:map ponylang-mode-map
         ("C-c C-l" . ponylang-project-build)
-        ("C-M-x" . ponylang-project-run)
-        ("<C-tab>" . company-ctags)))
+        ("C-M-x" . ponylang-project-run)))
 
 ;;; pony-init.el ends here

@@ -9,12 +9,4 @@
   :after flycheck-rust
   :hook (rust-mode . flycheck-rust-setup))
 
-(dap-register-debug-template "Rust::GDB Run Configuration"
-                             (list :type "gdb"
-                                   :request "launch"
-                                   :name "GDB::Run"
-                           :gdbpath "rust-gdb"
-                                   :target nil
-                                   :cwd nil))
-
 ;;; rust-init.el ends here

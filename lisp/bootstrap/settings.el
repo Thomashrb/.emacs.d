@@ -2,16 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 
-;; enable company golbaly
-(add-hook 'after-init-hook 'global-company-mode)
-
-;; set default `company-backends'
-(setq company-backends
-      '((company-files          ; files & directory
-         company-keywords       ; keywords
-         company-yasnippet)
-        (company-abbrev company-dabbrev)))
-
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode)
   (setq display-line-numbers-type 'relative))

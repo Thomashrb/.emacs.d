@@ -30,8 +30,24 @@
   :config
   (yas-global-mode 1))
 
-(use-package company
-  :hook (prog-mode . company-mode))
+(use-package corfu
+  :init
+  (global-corfu-mode)
+  ;; TAB-and-Go customizations
+  :custom
+  (corfu-auto t)            ;; Enable auto completion
+  (corfu-cycle t)           ;; Enable cycling for `corfu-next/previous'
+  (corfu-preselect 'prompt) ;; Always preselect the prompt
+  ;; Use TAB for cycling, default is `corfu-complete'.
+  :bind
+  (:map corfu-map
+        ("TAB" . corfu-next)
+        ([tab] . corfu-next)
+        ("S-TAB" . corfu-previous)
+        ([backtab] . corfu-previous))
+  :hook ((prog-mode . corfu-mode)
+         (shell-mode . corfu-mode)
+         (eshell-mode . corfu-mode)))
 
 (use-package avy
   :config
