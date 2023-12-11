@@ -21,15 +21,4 @@
 ;; Prompt before killing emacs
 (setq confirm-kill-emacs 'y-or-n-p)
 
-;; Path
-(when (equal "guix" system-name)
-  (setq exec-path '("~/bin"
-                  "/run/setuid-programs"
-                  "~/.config/guix/current/bin"
-                  "~/.guix-profile/bin"
-                  "~/.guix-profile/sbin"
-                  "/run/current-system/profile/bin"
-                  "/run/current-system/profile/sbin"
-                  "~/dotfiles/emacs/")))
-
 ;;; settings.el ends here
