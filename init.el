@@ -24,6 +24,7 @@
 (load "~/.emacs.d/lisp/languages/scala-init.el")
 (load "~/.emacs.d/lisp/languages/zig-init.el")
 (load "~/.emacs.d/lisp/languages/rust-init.el")
+(load "~/.emacs.d/lisp/languages/go-init.el")
 (load "~/.emacs.d/lisp/languages/cc-init.el")
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 (load "~/.emacs.d/lisp/languages/config-init.el")
@@ -31,7 +32,6 @@
 ;; (load "~/.emacs.d/lisp/languages/lua-init.el")
 ;; (load "~/.emacs.d/lisp/languages/php-init.el")
 ;; (load "~/.emacs.d/lisp/languages/pony-init.el")
-(load "~/.emacs.d/lisp/languages/go-init.el")
 (load "~/.emacs.d/lisp/languages/eglot-init.el")
 ;; Social
 ;; (load "~/.emacs.d/lisp/social/irc.el")
