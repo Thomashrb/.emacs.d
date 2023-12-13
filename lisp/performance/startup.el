@@ -9,7 +9,8 @@
  (use-package gcmh
    :config
    (gcmh-mode 1))
-;; Setting garbage collection threshold
+
+;; Make gc pauses faster by decreasing the threshold.
 (setq gc-cons-threshold 402653184
       gc-cons-percentage 0.6)
 
