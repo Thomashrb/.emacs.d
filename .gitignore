@@ -36,3 +36,4 @@ backups/*
 /undo/
 /eln-cache/
 *.elc
+/tree-sitter/

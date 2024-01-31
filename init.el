@@ -21,6 +21,7 @@
 (load "~/.emacs.d/lisp/git.el")
 (load "~/.emacs.d/lisp/misc.el")
 ;; Language support
+(load "~/.emacs.d/lisp/languages/treesitter.el")
 (load "~/.emacs.d/lisp/languages/scala-init.el")
 (load "~/.emacs.d/lisp/languages/zig-init.el")
 (load "~/.emacs.d/lisp/languages/rust-init.el")
@@ -29,13 +30,12 @@
 (load "~/.emacs.d/lisp/languages/markdown-init.el")
 (load "~/.emacs.d/lisp/languages/config-init.el")
 ;; (load "~/.emacs.d/lisp/languages/lua-init.el")
-;; (load "~/.emacs.d/lisp/languages/php-init.el")
+(load "~/.emacs.d/lisp/languages/php-init.el")
 (load "~/.emacs.d/lisp/languages/eglot-init.el")
 ;; Social
 ;; (load "~/.emacs.d/lisp/social/irc.el")
 ;; (load "~/.emacs.d/lisp/social/email.el")
 ;; Runtime performance
 (load "~/.emacs.d/lisp/performance/runtime.el")
-;; workaround
 
 ;;; init.el ends here
