@@ -43,8 +43,4 @@
   (global-set-key (kbd "C-c v U") 'magit-unstage-file)
   (global-set-key (kbd "C-c v l") 'magit-log))
 
-(use-package keychain-environment
-  :init
-  (keychain-refresh-environment))
-
 ;;; git.el ends here
