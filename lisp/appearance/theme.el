@@ -2,12 +2,12 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package moe-theme
+(load-theme 'modus-vivendi)
+(show-paren-mode t)
+(setq show-paren-style 'expression)
+
+(use-package doom-modeline
   :ensure t
-  :init
-  (load-theme 'moe-light)
-  (setq moe-theme-modeline-color 'cyan)
-  (show-paren-mode t)
-  (setq show-paren-style 'expression))
+  :hook (after-init . doom-modeline-mode))
 
 ;;; theme.el ends here
