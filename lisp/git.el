@@ -21,13 +21,6 @@
   (csetq ediff-split-window-function 'split-window-horizontally)
   (csetq ediff-diff-options "-w"))
 
-;; emacs shipped project package is outdated
-;; and magit breaks if this is not loaded before magit
-;; and rustic is loaded https://github.com/magit/magit/pull/4445#issuecomment-881339463
-(use-package project
-  :init
-  (setq project-switch-commands t))
-
 ;; Git porcelain
 (use-package magit
   :after project
