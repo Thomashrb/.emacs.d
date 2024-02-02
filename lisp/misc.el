@@ -55,12 +55,8 @@
   (global-set-key (kbd "C-c F") 'avy-goto-char-2)
   (setq avy-background t))
 
-(use-package multiple-cursors
-  :config
-  (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-  (global-set-key (kbd "C->") 'mc/mark-next-like-this)
-  (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-  (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this))
+;; Enable rectangle selection mode with C-<enter>
+(cua-selection-mode 1)
 
 (use-package comment-tags
   :config
