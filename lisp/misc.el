@@ -3,6 +3,10 @@
 ;; After bootstrapping use-package
 ;; all other general mode setup should go here
 ;;; Code:
+(use-package devil
+  :init
+  (global-devil-mode))
+
 (use-package undo-tree
   :init
   (global-undo-tree-mode))
