@@ -4,7 +4,9 @@
 ;;; Code:
 
 ;; Sidebar with gitmarkers
-(use-package git-gutter)
+(use-package git-gutter
+  :init
+  (global-git-gutter-mode t))
 
 ;; https://oremacs.com/2015/01/17/setting-up-ediff/
 (defmacro csetq (variable value)
@@ -15,13 +17,13 @@
 (use-package ediff
   :defer t
   :init
+  (global-set-key (kbd "C-c v E") 'vc-ediff)
   (winner-mode)
   (add-hook 'ediff-after-quit-hook-internal 'winner-undo)
   (csetq ediff-window-setup-function 'ediff-setup-windows-plain)
   (csetq ediff-split-window-function 'split-window-horizontally)
   (csetq ediff-diff-options "-w"))
 
-;; Git porcelain
 (use-package magit
   :after project
   :defer t
@@ -39,8 +41,7 @@
   (global-set-key (kbd "C-c v L") 'magit-log-buffer-file)
   (global-set-key (kbd "C-c v S") 'magit-stage-file)
   (global-set-key (kbd "C-c v U") 'magit-unstage-file)
-  (global-set-key (kbd "C-c v l") 'magit-log)
-  (global-git-gutter-mode t))
+  (global-set-key (kbd "C-c v l") 'magit-log))
 
 (use-package keychain-environment
   :init
