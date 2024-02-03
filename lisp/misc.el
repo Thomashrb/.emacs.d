@@ -44,6 +44,13 @@
          (shell-mode . corfu-mode)
          (eshell-mode . corfu-mode)))
 
+;; Only needed when using emacs in the terminal
+(use-package corfu-terminal
+  :after corfu
+  :straight (corfu-terminal :type git :repo "https://codeberg.org/akib/emacs-corfu-terminal.git")
+  :init
+  (unless (display-graphic-p) (corfu-terminal-mode +1)))
+
 (use-package avy
   :config
   (global-set-key (kbd "C-c f") 'avy-goto-char)

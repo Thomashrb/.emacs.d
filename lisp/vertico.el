@@ -39,6 +39,7 @@
          ("M-s D" . consult-locate)
          ("M-s s" . consult-ripgrep)               ;; pass arguments ex: #<searchterm> -- -g *.el
          ("M-s S" . vc-git-grep)
+         ("M-s b" . consult-line)
          ;; Isearch integration
          ("M-s e" . consult-isearch-history)
          :map isearch-mode-map
