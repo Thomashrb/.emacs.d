@@ -18,11 +18,6 @@
   :hook
   (prog-mode . smartparens-mode))
 
-;; get syntax check popups
-(use-package flycheck
-  :config
-  (add-hook 'after-init-hook #'global-flycheck-mode))
-
 (use-package restclient)
 
 ;; Rainbowdelimiters - Visualy pair up delimiters
