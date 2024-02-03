@@ -14,10 +14,6 @@
 ;; Prevent undo tree files from polluting your git repo
 (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 
-(use-package smartparens
-  :hook
-  (prog-mode . smartparens-mode))
-
 (use-package restclient)
 
 ;; Rainbowdelimiters - Visualy pair up delimiters
