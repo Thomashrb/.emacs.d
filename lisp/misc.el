@@ -59,6 +59,7 @@
 
 ;; Enable rectangle selection mode with C-<enter>
 (cua-selection-mode 1)
+(global-set-key (kbd "M-SPC") 'cua-set-rectangle-mark)
 
 (use-package comment-tags
   :config
