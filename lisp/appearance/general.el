@@ -18,7 +18,7 @@
 
 ;; Show parens
 (show-paren-mode t)
-(setq show-paren-style 'expression)
+(setq show-paren-style 'parenthesis)
 
 ;; Font
 (set-frame-font "-PfEd-Terminus (TTF)-normal-normal-normal-*-18-*-*-*-m-0-iso10646-1" nil t)
