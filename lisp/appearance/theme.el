@@ -2,12 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
-(load-theme 'modus-vivendi)
-(show-paren-mode t)
-(setq show-paren-style 'expression)
-
-(use-package doom-modeline
-  :ensure t
-  :hook (after-init . doom-modeline-mode))
+(use-package sketch-themes
+  :config
+  (load-theme 'sketch-black t))
 
 ;;; theme.el ends here
