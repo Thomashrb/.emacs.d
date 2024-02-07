@@ -2,8 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package tao-theme
+(use-package stimmung-themes
+  :straight (stimmung-themes :host github :repo "motform/stimmung-themes")
+  :demand t
   :config
-  (load-theme 'tao-yin t))
+  (stimmung-themes-load-dark))
 
 ;;; theme.el ends here
