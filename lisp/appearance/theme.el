@@ -2,8 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package sketch-themes
+(use-package tao-theme
   :config
-  (load-theme 'sketch-black t))
+  (load-theme 'tao-yin t))
 
 ;;; theme.el ends here

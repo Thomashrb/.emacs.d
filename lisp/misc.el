@@ -14,13 +14,6 @@
 ;; Prevent undo tree files from polluting your git repo
 (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 
-(use-package restclient)
-
-;; Rainbowdelimiters - Visualy pair up delimiters
-(use-package rainbow-delimiters
-  :hook
-  (prog-mode . rainbow-delimiters-mode))
-
 (use-package yasnippet
   :config
   (yas-global-mode 1))

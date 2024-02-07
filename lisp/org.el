@@ -18,8 +18,6 @@
          ("C-c o o p" . org-previous-link)
          ("C-c o o O" . org-open-at-point)))
 
-(use-package ob-restclient) ; org-babel restclient
-
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((shell . t)
