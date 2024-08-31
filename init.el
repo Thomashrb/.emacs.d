@@ -16,7 +16,6 @@
 (load "~/.emacs.d/lisp/appearance/theme.el")
 (load "~/.emacs.d/lisp/appearance/general.el")
 ;; General emacs configs
-(load "~/.emacs.d/lisp/org.el")
 (load "~/.emacs.d/lisp/vertico.el")
 (load "~/.emacs.d/lisp/git.el")
 (load "~/.emacs.d/lisp/misc.el")
@@ -27,7 +26,6 @@
 (load "~/.emacs.d/lisp/languages/rust-init.el")
 (load "~/.emacs.d/lisp/languages/go-init.el")
 (load "~/.emacs.d/lisp/languages/cc-init.el")
-(load "~/.emacs.d/lisp/languages/markdown-init.el")
 (load "~/.emacs.d/lisp/languages/config-init.el")
 ;; (load "~/.emacs.d/lisp/languages/lua-init.el")
 (load "~/.emacs.d/lisp/languages/php-init.el")
