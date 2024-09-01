@@ -8,7 +8,8 @@
       inhibit-startup-echo-area-message t)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-(scroll-bar-mode -1)
+(if (display-graphic-p)
+    (scroll-bar-mode -1))
 
 ;; Highlight trailing whitespace
 (setq-default show-trailing-whitespace t)
