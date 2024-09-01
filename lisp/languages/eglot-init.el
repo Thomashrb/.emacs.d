@@ -17,6 +17,4 @@
 
 (use-package eldoc)
 
-(use-package dap-mode)
-
 ;;; eglot-init.el ends here
