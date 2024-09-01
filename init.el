@@ -32,7 +32,6 @@
 (load "~/.emacs.d/lisp/languages/eglot-init.el")
 ;; Social
 ;; (load "~/.emacs.d/lisp/social/irc.el")
-;; (load "~/.emacs.d/lisp/social/email.el")
 ;; Runtime performance
 (load "~/.emacs.d/lisp/performance/runtime.el")
 
