@@ -2,10 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package stimmung-themes
-  :straight (stimmung-themes :host github :repo "motform/stimmung-themes")
+(use-package moe-theme
+  :straight (moe-theme :host github :repo "kuanyui/moe-theme")
   :demand t
   :config
-  (stimmung-themes-load-dark))
+  (moe-dark))
 
 ;;; theme.el ends here
