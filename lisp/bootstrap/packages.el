@@ -31,4 +31,12 @@
 ;; Always set `:straight t`
 (setq straight-use-package-by-default t)
 
+;; workaround of straight not playing well with eglot (among others probably)
+;; https://github.com/radian-software/straight.el/issues/1146
+(use-package straight
+  :custom
+  ;; add project and flymake to the pseudo-packages variable so straight.el doesn't download a separate version than what eglot downloads.
+  (straight-built-in-pseudo-packages '(emacs nadvice python image-mode project flymake))
+  (straight-use-package-by-default t))
+
 ;;; packages.el ends here
