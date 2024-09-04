@@ -4,11 +4,22 @@
 
 ;; Enable vertico
 (use-package vertico
-  :init
-  (vertico-mode)
-  (setq vertico-count 25)
+  :custom
+  (vertico-count 25)
   ;; Grow and shrink the Vertico minibuffer
-  (setq vertico-resize nil))
+  (vertico-resize nil)
+  (vertico-cycle t)
+  :init
+  (vertico-mode))
+
+(use-package orderless
+  :init
+  ;; Configure a custom style dispatcher (see the Consult wiki)
+  ;; (setq orderless-style-dispatchers '(+orderless-dispatch)
+  ;;       orderless-component-separator #'orderless-escapable-split-on-space)
+  (setq completion-styles '(orderless)
+        completion-category-defaults nil
+        completion-category-overrides '((file (styles partial-completion)))))
 
 (use-package consult
   :bind (("C-c k" . consult-kmacro)
@@ -76,16 +87,6 @@
   :after (embark consult)
   :hook
   (embark-collect-mode . consult-preview-at-point-mode))
-
-(use-package orderless
-  :init
-  ;; Configure a custom style dispatcher (see the Consult wiki)
-  ;; (setq orderless-style-dispatchers '(+orderless-dispatch)
-  ;;       orderless-component-separator #'orderless-escapable-split-on-space)
-  (setq completion-styles '(orderless)
-        completion-category-defaults nil
-        completion-category-overrides '((file (styles partial-completion)))))
-
 
 (use-package marginalia
   :after vertico
