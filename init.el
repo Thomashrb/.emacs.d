@@ -18,7 +18,6 @@
 ;; General emacs configs
 (load "~/.emacs.d/lisp/vertico.el")
 (load "~/.emacs.d/lisp/git.el")
-(load "~/.emacs.d/lisp/meow.el")
 (load "~/.emacs.d/lisp/misc.el")
 ;; Language support
 (load "~/.emacs.d/lisp/languages/treesitter.el")
