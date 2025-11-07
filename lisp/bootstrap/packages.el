@@ -4,11 +4,12 @@
 
 ;; Melpa repo
 ;; Users of Emacs versions >= 27 will want to add:
-(setq package-enable-at-startup nil)
 (setq package-archives
       '(("gnu"          . "http://elpa.gnu.org/packages/")
         ("melpa-stable" . "https://stable.melpa.org/packages/")
         ("melpa"        . "https://melpa.org/packages/")))
+
+;; elpaca
 (defvar elpaca-installer-version 0.11)
 (defvar elpaca-directory (expand-file-name "elpaca/" user-emacs-directory))
 (defvar elpaca-builds-directory (expand-file-name "builds/" elpaca-directory))
