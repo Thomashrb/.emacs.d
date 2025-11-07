@@ -20,7 +20,6 @@
 (load "~/.emacs.d/lisp/git.el")
 (load "~/.emacs.d/lisp/misc.el")
 ;; Language support
-(load "~/.emacs.d/lisp/languages/treesitter.el")
 (load "~/.emacs.d/lisp/languages/scala-init.el")
 (load "~/.emacs.d/lisp/languages/zig-init.el")
 (load "~/.emacs.d/lisp/languages/rust-init.el")
