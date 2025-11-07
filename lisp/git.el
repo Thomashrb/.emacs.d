@@ -15,7 +15,7 @@
             ',variable ,value))
 
 (use-package ediff
-  :defer t
+  :ensure nil
   :init
   (global-set-key (kbd "C-c v E") 'vc-ediff)
   (winner-mode)
@@ -26,7 +26,6 @@
 
 (use-package magit
   :after project
-  :defer t
   :init
   (setq magit-auto-revert-mode nil)
   (global-set-key (kbd "C-c v /") 'magit-dispatch)

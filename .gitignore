@@ -37,3 +37,4 @@ backups/*
 /eln-cache/
 *.elc
 /tree-sitter/
+elpaca

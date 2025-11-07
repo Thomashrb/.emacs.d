@@ -3,7 +3,6 @@
 ;;; Code:
 
 (use-package moe-theme
-  :straight (moe-theme :host github :repo "kuanyui/moe-theme")
   :demand t
   :config
   (moe-dark))

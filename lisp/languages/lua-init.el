@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-.(use-package lua-mode
+(use-package lua-mode
   :defer t)
 
 ;;; lua-init.el ends here

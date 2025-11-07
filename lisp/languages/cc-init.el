@@ -20,6 +20,7 @@
 (use-package cmake-mode)
 
 (use-package cc-mode
+  :ensure nil
   :bind
   (:map c-mode-map
         ("C-c C-k" . make-compile)
