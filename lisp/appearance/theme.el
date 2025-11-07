@@ -2,9 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package moe-theme
-  :demand t
+(use-package leuven-theme
   :config
-  (moe-dark))
+  (load-theme 'leuven-dark t))
 
 ;;; theme.el ends here
