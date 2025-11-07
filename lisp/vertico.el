@@ -59,11 +59,9 @@
          ("M-s l" . consult-line)                  ;; needed by consult-line to detect isearch
          ("M-s L" . consult-line-multi)))           ;; needed by consult-line to detect isearch
 
-(use-package projectile
-  :init
-  (projectile-mode +1)
-  :bind
-  ("C-c p" . 'projectile-command-map))
+(use-package project
+  :bind-keymap
+  (("C-c p" . project-prefix-map)))
 
 (use-package wgrep)
 
