@@ -33,6 +33,7 @@
          (shell-mode . corfu-mode)
          (eshell-mode . corfu-mode)))
 
+;; TODO rm after emacs 31
 ;; Only needed when using emacs in the terminal
 (use-package corfu-terminal
   :after corfu
@@ -67,6 +68,10 @@
         comment-tags-show-faces nil)
   :hook
   (prog-mode . comment-tags-mode))
+
+(use-package dumb-jump
+  :config
+  (global-set-key (kbd "M-s a") 'dumb-jump-go))
 
 (use-package which-key
   :init (which-key-mode)
