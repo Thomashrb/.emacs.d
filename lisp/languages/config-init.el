@@ -13,7 +13,10 @@
   (("\\.yaml\\'" . yaml-mode))))
 
 (use-package toml-mode
-  :mode (("\\.toml\\'" . toml-mode)))
+  :mode
+  (("\\.toml\\'" . toml-mode))
+  (("\\.hcl\\'" . toml-mode))
+  (("\\.hcl.template\\'" . toml-mode)))
 
 (use-package json-mode
   :after json-reformat
