@@ -5,7 +5,7 @@
 
 ;; Sidebar with gitmarkers
 (use-package git-gutter
-  :init
+  :config
   (global-git-gutter-mode t))
 
 ;; https://oremacs.com/2015/01/17/setting-up-ediff/

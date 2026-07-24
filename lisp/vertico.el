@@ -9,7 +9,7 @@
   ;; Grow and shrink the Vertico minibuffer
   (vertico-resize nil)
   (vertico-cycle t)
-  :init
+  :config
   (vertico-mode))
 
 (use-package orderless
@@ -60,7 +60,7 @@
          ("M-s L" . consult-line-multi)))           ;; needed by consult-line to detect isearch
 
 (use-package projectile
-  :init
+  :config
   (projectile-mode +1)
   :bind
   ("C-c p" . 'projectile-command-map))
@@ -90,7 +90,7 @@
 
 (use-package marginalia
   :after vertico
-  :init
+  :config
   (marginalia-mode))
 
 ;;; vertico.el ends here

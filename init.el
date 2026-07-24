@@ -3,8 +3,8 @@
 ;;; Code:
 
 ;; Don't litter my init file
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-(load custom-file 'noerror)
+(setq custom-file (expand-file-name "customs.el" user-emacs-directory))
+(add-hook 'elpaca-after-init-hook (lambda () (load custom-file 'noerror)))
 
 ;; Bootstrap packages
 (load "~/.emacs.d/lisp/bootstrap/packages.el")

@@ -4,7 +4,7 @@
 ;; all other general mode setup should go here
 ;;; Code:
 (use-package undo-tree
-  :init
+  :config
   (global-undo-tree-mode))
 
 ;; Prevent undo tree files from polluting your git repo
@@ -15,7 +15,7 @@
   (yas-global-mode 1))
 
 (use-package corfu
-  :init
+  :config
   (global-corfu-mode)
   ;; TAB-and-Go customizations
   :custom
@@ -37,7 +37,7 @@
 ;; Only needed when using emacs in the terminal
 (use-package corfu-terminal
   :after corfu
-  :init
+  :config
   (unless (display-graphic-p) (corfu-terminal-mode +1)))
 
 (use-package avy
