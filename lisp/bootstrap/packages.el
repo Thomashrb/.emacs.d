@@ -10,15 +10,15 @@
         ("melpa"        . "https://melpa.org/packages/")))
 
 ;; elpaca
-(defvar elpaca-installer-version 0.11)
+(defvar elpaca-installer-version 0.12)
 (defvar elpaca-directory (expand-file-name "elpaca/" user-emacs-directory))
 (defvar elpaca-builds-directory (expand-file-name "builds/" elpaca-directory))
-(defvar elpaca-repos-directory (expand-file-name "repos/" elpaca-directory))
+(defvar elpaca-sources-directory (expand-file-name "sources/" elpaca-directory))
 (defvar elpaca-order '(elpaca :repo "https://github.com/progfolio/elpaca.git"
                               :ref nil :depth 1 :inherit ignore
                               :files (:defaults "elpaca-test.el" (:exclude "extensions"))
-                              :build (:not elpaca--activate-package)))
-(let* ((repo  (expand-file-name "elpaca/" elpaca-repos-directory))
+                              :build (:not elpaca-activate)))
+(let* ((repo  (expand-file-name "elpaca/" elpaca-sources-directory))
        (build (expand-file-name "elpaca/" elpaca-builds-directory))
        (order (cdr elpaca-order))
        (default-directory repo))
@@ -49,12 +49,24 @@
 (add-hook 'after-init-hook #'elpaca-process-queues)
 (elpaca `(,@elpaca-order))
 
+(elpaca-wait)
+
+;; https://github.com/progfolio/elpaca/issues/343
+(elpaca (transient :branch "main"))
+
 ;; Install use-package support
 (elpaca elpaca-use-package
   ;; Enable use-package :ensure support for Elpaca.
   (elpaca-use-package-mode)
-  (setq elpaca-use-package-by-default t))
+  ;; Make plain `(use-package foo)' declarations install foo through Elpaca.
+  ;; `elpaca-use-package-by-default' is not a setting understood by the
+  ;; current elpaca-use-package implementation.
+  (setq use-package-always-ensure t))
 
-;; https://github.com/progfolio/elpaca/issues/343
-(elpaca (transient :branch "main"))
+;; `elpaca-use-package-mode' is enabled by the elpaca queue.  Wait for that
+;; queue before evaluating the rest of the configuration, otherwise the
+;; following `use-package' forms run with the regular use-package handlers
+;; and packages are loaded before their Elpaca installations are ready.
+(elpaca-wait)
+
 ;;; packages.el ends here
