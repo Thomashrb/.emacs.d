@@ -38,3 +38,4 @@ backups/*
 *.elc
 /tree-sitter/
 elpaca
+/projectile-frecency.eld
