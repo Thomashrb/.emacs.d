@@ -3,10 +3,7 @@
 ;; commentary
 ;;; Code:
 
-(use-package flycheck-rust)
-
 (use-package rust-mode
-  :after flycheck-rust
-  :hook (rust-mode . flycheck-rust-setup))
+  :mode "\\.rs\\'")
 
 ;;; rust-init.el ends here
