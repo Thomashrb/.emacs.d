@@ -8,6 +8,7 @@
   (add-to-list 'eglot-server-programs '(scala-mode . ("metals-emacs")))
   :bind
   (:map eglot-mode-map
+      ;; M-. jump-to-definition
       ("C-c C-r" . eglot-rename)
       ("C-c C-f" . eglot-format-buffer)
       ("C-c C-o" . eglot-code-action-organize-imports)))

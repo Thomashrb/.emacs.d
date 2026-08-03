@@ -69,8 +69,12 @@
   (prog-mode . comment-tags-mode))
 
 (use-package dumb-jump
+  :custom
+  (dumb-jump-prefer-searcher 'rg)
+  (xref-show-definitions-function #'consult-xref)
   :config
-  (global-set-key (kbd "M-s a") 'dumb-jump-go))
+  (global-set-key (kbd "M-s a") 'dumb-jump-find-references)
+  (add-hook 'xref-backend-functions #'dumb-jump-xref-activate))
 
 (use-package which-key
   :init (which-key-mode)
