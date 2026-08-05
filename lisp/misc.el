@@ -14,6 +14,13 @@
   :config
   (yas-global-mode 1))
 
+;; use xclip when in terminal mode
+(use-package xclip
+  :if (and (not (display-graphic-p))
+           (executable-find "xclip"))
+  :config
+  (xclip-mode 1))
+
 (use-package corfu
   :config
   (global-corfu-mode)
