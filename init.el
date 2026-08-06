@@ -30,6 +30,7 @@
 (load "~/.emacs.d/lisp/languages/lua-init.el")
 (load "~/.emacs.d/lisp/languages/php-init.el")
 (load "~/.emacs.d/lisp/languages/eglot-init.el")
+(load "~/.emacs.d/lisp/languages/web-init.el")
 ;; Social
 ;; (load "~/.emacs.d/lisp/social/irc.el")
 ;; Runtime performance
