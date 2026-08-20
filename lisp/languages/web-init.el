@@ -3,6 +3,9 @@
 ;;; Code:
 
 (use-package web-mode
+  :mode
+    (("\\.ts\\'" . web-mode))
+    (("\\.js\\'" . web-mode))
   :config
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
