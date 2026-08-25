@@ -40,13 +40,6 @@
          (shell-mode . corfu-mode)
          (eshell-mode . corfu-mode)))
 
-;; TODO rm after emacs 31
-;; Only needed when using emacs in the terminal
-(use-package corfu-terminal
-  :after corfu
-  :config
-  (unless (display-graphic-p) (corfu-terminal-mode +1)))
-
 (use-package avy
   :config
   (global-set-key (kbd "C-c f") 'avy-goto-char)

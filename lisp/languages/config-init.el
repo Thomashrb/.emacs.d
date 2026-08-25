@@ -1,4 +1,4 @@
-;;; config-init --- Config langs setup
+;;; config-init --- Config langs setup -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Handle configuration languages
 ;;; Code:

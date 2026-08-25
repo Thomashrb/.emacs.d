@@ -6,6 +6,12 @@
 (setq custom-file (expand-file-name "customs.el" user-emacs-directory))
 (add-hook 'elpaca-after-init-hook (lambda () (load custom-file 'noerror)))
 
+;; TODO: rm at a later point when elpaca has updated its release-data table to include emacs 31.1
+;; Arch builds Emacs with --disable-build-details, leaving
+;; `emacs-build-time' nil.  Elpaca needs the Emacs release date when
+;; comparing built-in package versions.
+(setq elpaca-core-date '(20260824))
+
 ;; Bootstrap packages
 (load "~/.emacs.d/lisp/bootstrap/packages.el")
 (load "~/.emacs.d/lisp/bootstrap/settings.el")
