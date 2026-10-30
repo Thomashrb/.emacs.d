@@ -40,6 +40,8 @@
   (global-set-key (kbd "C-c v L") 'magit-log-buffer-file)
   (global-set-key (kbd "C-c v S") 'magit-stage-file)
   (global-set-key (kbd "C-c v U") 'magit-unstage-file)
-  (global-set-key (kbd "C-c v l") 'magit-log))
+  (global-set-key (kbd "C-c v l") 'magit-log)
+  :config
+  (define-key magit-status-mode-map (kbd "g") 'magit-status-quick))
 
 ;;; git.el ends here
